@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alianza One LLC — Professional Services | Salt Lake City, UT</title>
+<meta name="description" content="Alianza One LLC: LegalShield, immigration forms, business formation, tax prep, bookkeeping, notary, mediation, Profit First advisory & court interpretation. Bilingual EN/ES. Salt Lake City, UT. Call 470-642-7978.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ── ALIANZA ONE BRAND TOKENS ───────────────── */
+:root{
+  --navy:#0D1F3C; --navy2:#0A1628;
+  --gold:#C8960A; --goldlt:#E4B020; --goldpale:#F4EFD8;
+  --white:#FFFFFF; --offwh:#F4F5F7; --warmgr:#D8DCE3;
+  --txt:#111827; --txtm:#374151; --txts:#6B7280;
+  --green:#25D366;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+  --r:8px; --rl:16px;
+  --sh:0 4px 24px rgba(13,31,60,.10);
+  --shl:0 12px 48px rgba(13,31,60,.18);
+  --tr:all .28s cubic-bezier(.4,0,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--txt);background:var(--white);line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img{max-width:100%;display:block}
+
+/* ── LANGUAGE SYSTEM ────────────────────────── */
+[data-en],[data-es]{display:none}
+.lang-en [data-en]{display:block}
+.lang-en span[data-en]{display:inline!important}
+.lang-en li[data-en]{display:list-item!important}
+.lang-en a[data-en]{display:inline-flex!important}
+.lang-en div[data-en]{display:block!important}
+.lang-en button[data-en]{display:inline-block!important}
+.lang-es [data-es]{display:block}
+.lang-es span[data-es]{display:inline!important}
+.lang-es li[data-es]{display:list-item!important}
+.lang-es a[data-es]{display:inline-flex!important}
+.lang-es div[data-es]{display:block!important}
+.lang-es button[data-es]{display:inline-block!important}
+
+/* ── TIER 1 — UTILITY BAR ───────────────────── */
+.ubar{
+  background:#07101E;
+  padding:0 14px;height:44px;
+  display:flex;align-items:center;justify-content:space-between;
+  position:sticky;top:0;z-index:200;
+  border-bottom:1px solid rgba(200,150,10,.15);
+}
+.ubar-left{display:flex;align-items:center;gap:14px}
+.ubar-phone{display:flex;align-items:center;gap:4px;color:#fff;font-weight:600;font-size:12.5px;white-space:nowrap}
+.ubar-phone:hover{color:var(--gold)}
+.ubar-wa{display:flex;align-items:center;gap:5px;background:var(--green);color:#fff;font-size:11.5px;font-weight:600;padding:4px 11px;border-radius:20px;transition:var(--tr)}
+.ubar-wa:hover{background:#1eba57}
+.ubar-hours{font-size:11px;color:rgba(255,255,255,.42);letter-spacing:.02em}
+.ubar-right{display:flex;align-items:center;gap:8px}
+.lsw{display:flex;align-items:center;background:rgba(255,255,255,.08);border-radius:22px;padding:3px;gap:2px}
+.lbtn{border:none;background:transparent;color:rgba(255,255,255,.5);font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.08em;padding:3px 10px;border-radius:18px;cursor:pointer;transition:var(--tr)}
+.lbtn.active{background:var(--gold);color:var(--navy)}
+.lbtn:not(.active):hover{color:#fff}
+.ubar-note{font-size:10px;color:rgba(255,255,255,.28)}
+
+/* ── TIER 2 — MAIN NAV ──────────────────────── */
+.nav{
+  position:sticky;top:44px;z-index:199;
+  background:rgba(13,31,60,.97);backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(200,150,10,.18);
+  padding:0 40px;height:66px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+/* Alianza One Logo — Wordmark treatment per brand standards */
+.nlogo{display:flex;align-items:center;gap:10px;flex-shrink:0;text-decoration:none}
+.nlogo-umbrella{width:52px;height:35px;flex-shrink:0}
+.nlogo-text{display:flex;flex-direction:column;line-height:1}
+.nlogo-alianza{font-family:var(--serif);font-size:15px;font-weight:700;color:#fff;letter-spacing:.10em;text-transform:uppercase}
+.nlogo-one{font-family:var(--serif);font-size:15px;font-weight:700;color:var(--gold);letter-spacing:.14em;text-transform:uppercase}
+.nlinks{display:flex;align-items:center;gap:22px}
+.nlinks a{font-size:13px;font-weight:500;color:rgba(255,255,255,.72);letter-spacing:.04em;transition:var(--tr);position:relative;white-space:nowrap}
+.nlinks a::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transition:var(--tr)}
+.nlinks a:hover{color:#fff}
+.nlinks a:hover::after{transform:scaleX(1)}
+.ncta{background:var(--gold);color:var(--navy)!important;font-weight:600!important;padding:8px 18px;border-radius:var(--r)}
+.ncta:hover{background:var(--goldlt)!important;transform:translateY(-1px)}
+.ncta::after{display:none!important}
+.nwa{display:inline-flex;align-items:center;gap:5px;background:var(--green);color:#fff!important;font-weight:600!important;font-size:13px;padding:8px 14px;border-radius:var(--r)}
+.nwa:hover{background:#1eba57!important;transform:translateY(-1px)}
+.nwa::after{display:none!important}
+.nav-lsw{margin-left:6px}
+.hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;margin-left:8px}
+.hbg span{width:22px;height:2px;background:#fff;border-radius:2px;transition:var(--tr)}
+
+/* ── BUTTONS ────────────────────────────────── */
+.btn-p{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--navy);font-family:var(--sans);font-weight:600;font-size:15px;padding:14px 28px;border-radius:var(--r);border:none;cursor:pointer;transition:var(--tr)}
+.btn-p:hover{background:var(--goldlt);transform:translateY(-2px);box-shadow:0 8px 24px rgba(200,150,10,.35)}
+.btn-o{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;font-family:var(--sans);font-weight:500;font-size:15px;padding:13px 28px;border-radius:var(--r);border:1px solid rgba(255,255,255,.22);cursor:pointer;transition:var(--tr)}
+.btn-o:hover{border-color:var(--gold);color:var(--gold)}
+.btn-wa{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;font-family:var(--sans);font-weight:600;font-size:15px;padding:14px 26px;border-radius:var(--r);border:none;cursor:pointer;transition:var(--tr)}
+.btn-wa:hover{background:#1eba57;transform:translateY(-2px)}
+
+/* ── SECTION UTILITIES ──────────────────────── */
+.sec{padding:92px 40px}
+.sinner{max-width:1160px;margin:0 auto}
+.stag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.sh2{font-family:var(--serif);font-size:clamp(30px,4vw,46px);font-weight:700;color:var(--navy);line-height:1.1;margin-bottom:16px;letter-spacing:-.01em}
+.sh2 em{font-style:italic;color:var(--gold)}
+.sh2w{color:#fff}
+.ssub{font-size:17px;color:var(--txtm);line-height:1.75;max-width:600px;margin-bottom:52px}
+.ssubw{color:rgba(255,255,255,.7)}
+
+/* ── SCROLL ANIMATIONS ──────────────────────── */
+.fi{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
+.fi.vis{opacity:1;transform:none}
+.fi1{transition-delay:.1s}.fi2{transition-delay:.2s}.fi3{transition-delay:.3s}.fi4{transition-delay:.4s}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+
+/* ── HERO ───────────────────────────────────── */
+.hero{min-height:90vh;background:var(--navy);position:relative;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:radial-gradient(ellipse 80% 60% at 68% 50%,rgba(200,150,10,.08) 0%,transparent 70%),radial-gradient(ellipse 45% 70% at 20% 85%,rgba(200,150,10,.04) 0%,transparent 60%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(200,150,10,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(200,150,10,.03) 1px,transparent 1px);background-size:56px 56px}
+.hero-inner{position:relative;z-index:2;max-width:1160px;margin:0 auto;padding:72px 40px;display:grid;grid-template-columns:1fr 400px;gap:72px;align-items:center;width:100%}
+.hbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,150,10,.12);border:1px solid rgba(200,150,10,.28);border-radius:24px;padding:6px 16px;font-size:11.5px;font-weight:600;letter-spacing:.10em;text-transform:uppercase;color:var(--gold);margin-bottom:22px}
+.hbadge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite}
+.hh1{font-family:var(--serif);font-size:clamp(40px,5.2vw,64px);font-weight:700;color:#fff;line-height:1.07;margin-bottom:22px;letter-spacing:-.01em}
+.hh1 em{font-style:italic;color:var(--gold)}
+.hsub{font-size:16.5px;color:rgba(255,255,255,.7);line-height:1.78;max-width:510px;margin-bottom:32px}
+.hactions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.hphone{font-size:14px;color:rgba(255,255,255,.6);margin-top:6px}
+.hphone a{color:var(--gold);font-weight:600;font-size:15px}
+.hstats{display:flex;align-items:center;gap:18px;margin-top:36px;flex-wrap:wrap}
+.hstat-div{width:1px;height:32px;background:rgba(255,255,255,.14)}
+.hstat-n{font-family:var(--serif);font-size:26px;font-weight:700;color:var(--gold);line-height:1}
+.hstat-l{font-size:11px;font-weight:500;color:rgba(255,255,255,.45);letter-spacing:.06em;text-transform:uppercase;margin-top:3px}
+/* Hero card */
+.hcard{background:rgba(255,255,255,.05);backdrop-filter:blur(8px);border:1px solid rgba(200,150,10,.2);border-radius:var(--rl);padding:28px;animation:fadeUp .8s .3s both}
+.hcard-title{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--gold);margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid rgba(200,150,10,.18)}
+.spills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:22px}
+.spill{background:rgba(200,150,10,.1);border:1px solid rgba(200,150,10,.22);border-radius:20px;padding:5px 11px;font-size:11.5px;font-weight:500;color:rgba(255,255,255,.8)}
+.hcard-cta{width:100%;background:var(--gold);color:var(--navy);border:none;border-radius:var(--r);padding:13px;font-family:var(--sans);font-size:14px;font-weight:600;cursor:pointer;transition:var(--tr);text-align:center;display:block;margin-bottom:8px}
+.hcard-cta:hover{background:var(--goldlt)}
+.hcard-wa{width:100%;background:var(--green);color:#fff;border:none;border-radius:var(--r);padding:12px;font-family:var(--sans);font-size:14px;font-weight:600;cursor:pointer;transition:var(--tr);text-align:center;display:flex;align-items:center;justify-content:center;gap:7px}
+.hcard-wa:hover{background:#1eba57}
+.hcard-note{text-align:center;font-size:11px;color:rgba(255,255,255,.3);margin-top:9px;line-height:1.6}
+
+/* ── UMBRELLA SVG ────────────────────────────── */
+.umbrella-svg{width:100%;height:100%}
+
+/* ── RISK / PAIN ─────────────────────────────── */
+.risk-sec{background:var(--navy2);padding:64px 40px}
+.risk-inner{max-width:1160px;margin:0 auto}
+.risk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.risk-card{background:rgba(255,255,255,.04);border:1px solid rgba(200,150,10,.18);border-radius:var(--rl);padding:24px}
+.risk-icon{font-size:28px;margin-bottom:14px}
+.risk-title{font-family:var(--serif);font-size:18px;font-weight:700;color:#fff;margin-bottom:10px;line-height:1.2}
+.risk-desc{font-size:13.5px;color:rgba(255,255,255,.6);line-height:1.65;margin-bottom:14px}
+.risk-cost{display:inline-block;background:rgba(200,150,10,.12);border:1px solid rgba(200,150,10,.35);color:var(--gold);font-size:12px;font-weight:600;padding:4px 10px;border-radius:6px;letter-spacing:.04em}
+.risk-vs{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:32px;flex-wrap:wrap}
+.risk-vs-box{flex:1;min-width:180px;background:rgba(255,255,255,.04);border:1px solid rgba(200,150,10,.2);border-radius:var(--r);padding:18px 22px;text-align:center}
+.risk-vs-box.hi{background:rgba(200,150,10,.10);border-color:rgba(200,150,10,.4)}
+.risk-vs-label{font-size:11px;font-weight:600;letter-spacing:.10em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.risk-vs-val{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:700;color:#fff}
+.risk-vs-val.gold{color:var(--gold)}
+.risk-vs-sub{font-size:11px;color:rgba(255,255,255,.4);margin-top:4px}
+.risk-arrow{font-size:22px;color:var(--gold);flex-shrink:0}
+
+/* ── SERVICES — 9 cards ──────────────────────── */
+.svc-sec{background:var(--offwh)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc-card{background:#fff;border-radius:var(--rl);padding:28px;border:1px solid rgba(13,31,60,.07);transition:var(--tr);position:relative;overflow:hidden}
+.svc-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transition:var(--tr);transform-origin:left}
+.svc-card:hover{transform:translateY(-4px);box-shadow:var(--shl);border-color:rgba(200,150,10,.25)}
+.svc-card:hover::before{transform:scaleX(1)}
+.svc-num{font-family:var(--serif);font-size:11px;font-weight:700;color:var(--gold);letter-spacing:.12em;margin-bottom:4px;text-transform:uppercase}
+.svc-icon{width:46px;height:46px;background:var(--goldpale);border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:21px}
+.svc-lbl{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:7px}
+.svc-h{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--navy);line-height:1.22;margin-bottom:11px}
+.svc-p{font-size:13.5px;color:var(--txts);line-height:1.68;margin-bottom:18px}
+.svc-list{margin-bottom:22px;display:flex;flex-direction:column;gap:5px}
+.svc-list li{font-size:13px;color:var(--txtm);display:flex;align-items:flex-start;gap:8px;line-height:1.5}
+.svc-list li::before{content:'◆';color:var(--gold);font-size:7px;margin-top:5px;flex-shrink:0;margin-right:2px}
+.svc-link{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:600;color:var(--navy);border-bottom:1px solid var(--gold);padding-bottom:2px;transition:var(--tr)}
+.svc-link:hover{color:var(--gold);gap:9px}
+
+/* ── PROCESS ─────────────────────────────────── */
+.proc-sec{background:#fff}
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;position:relative}
+.proc-grid::before{content:'';position:absolute;top:27px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,var(--goldpale),var(--gold),var(--goldpale),transparent)}
+.pstep{text-align:center;position:relative;z-index:1}
+.pnum{width:54px;height:54px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:var(--serif);font-size:21px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;border:2px solid var(--goldpale)}
+.ptitle{font-family:var(--serif);font-size:17px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.pdesc{font-size:13px;color:var(--txts);line-height:1.65}
+
+/* ── LEGALSHIELD ─────────────────────────────── */
+.ls-sec{background:var(--navy);padding:92px 40px}
+.ls-inner{max-width:1160px;margin:0 auto}
+.ls-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:60px;border-radius:var(--rl);overflow:hidden;border:1px solid rgba(200,150,10,.15)}
+.ls-stat{background:rgba(255,255,255,.03);padding:36px 28px;text-align:center;position:relative}
+.ls-stat:not(:last-child)::after{content:'';position:absolute;right:0;top:20%;bottom:20%;width:1px;background:rgba(200,150,10,.15)}
+.ls-stat-num{font-family:var(--serif);font-size:clamp(42px,6vw,72px);font-weight:700;color:var(--gold);line-height:1;margin-bottom:8px}
+.ls-stat-label{font-size:14px;color:rgba(255,255,255,.6);line-height:1.5;max-width:160px;margin:0 auto}
+.ls-stat-label strong{display:block;color:#fff;font-weight:600;margin-bottom:2px}
+.ls-plans-header{text-align:center;margin-bottom:36px}
+.ls-plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:52px}
+.ls-plan{background:rgba(255,255,255,.05);border:1px solid rgba(200,150,10,.14);border-radius:var(--rl);padding:28px;transition:var(--tr);position:relative}
+.ls-plan.featured{border-color:var(--gold);background:rgba(200,150,10,.07)}
+.ls-plan-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--navy);font-size:10px;font-weight:700;letter-spacing:.10em;text-transform:uppercase;padding:4px 14px;border-radius:20px;white-space:nowrap}
+.ls-plan-icon{font-size:32px;margin-bottom:14px}
+.ls-plan-name{font-family:var(--serif);font-size:22px;font-weight:700;color:#fff;margin-bottom:6px}
+.ls-plan-tagline{font-size:13px;color:rgba(255,255,255,.55);margin-bottom:20px;line-height:1.5}
+.ls-plan-tagline strong{color:var(--gold);font-size:18px}
+.ls-plan-list{display:flex;flex-direction:column;gap:8px;margin-bottom:22px}
+.ls-plan-item{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,.78);line-height:1.5}
+.ls-plan-item::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0;margin-top:1px;margin-right:2px}
+.ls-plan-cta{width:100%;background:rgba(200,150,10,.15);border:1px solid rgba(200,150,10,.3);color:var(--gold);font-family:var(--sans);font-size:13px;font-weight:600;padding:11px;border-radius:var(--r);cursor:pointer;transition:var(--tr)}
+.ls-plan.featured .ls-plan-cta{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.ls-plan-cta:hover{background:var(--gold);color:var(--navy)}
+.ids-strip{background:rgba(200,150,10,.07);border:1px solid rgba(200,150,10,.18);border-radius:var(--rl);padding:28px 32px;display:flex;align-items:center;gap:28px}
+.ids-icon{font-size:36px;flex-shrink:0}
+.ids-title{font-family:var(--serif);font-size:20px;font-weight:700;color:#fff;margin-bottom:5px}
+.ids-desc{font-size:13.5px;color:rgba(255,255,255,.65);line-height:1.65}
+.ids-cta{flex-shrink:0;background:var(--gold);color:var(--navy);border:none;border-radius:var(--r);padding:11px 22px;font-family:var(--sans);font-size:13px;font-weight:600;cursor:pointer;transition:var(--tr);white-space:nowrap}
+.ids-cta:hover{background:var(--goldlt)}
+
+/* ── TESTIMONIALS ────────────────────────────── */
+.test-sec{background:var(--offwh)}
+.test-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.test-hero{grid-column:1/-1;background:var(--navy);border-radius:var(--rl);padding:36px;position:relative;overflow:hidden}
+.test-hero::before{content:'"';position:absolute;top:-10px;left:24px;font-family:var(--serif);font-size:140px;color:rgba(200,150,10,.12);line-height:1;pointer-events:none}
+.test-hero-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(200,150,10,.12);border:1px solid rgba(200,150,10,.25);border-radius:20px;padding:4px 12px;font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.test-hero-quote{font-family:var(--serif);font-size:clamp(18px,2.2vw,24px);font-style:italic;color:#fff;line-height:1.55;margin-bottom:20px;position:relative;z-index:1}
+.test-hero-by{font-size:13px;font-weight:600;color:var(--gold)}
+.test-card{background:#fff;border-radius:var(--rl);padding:24px;border:1px solid rgba(13,31,60,.07);position:relative;overflow:hidden}
+.test-card::before{content:'"';position:absolute;top:-8px;right:16px;font-family:var(--serif);font-size:80px;color:var(--goldpale);line-height:1;pointer-events:none}
+.test-q{font-size:14.5px;color:var(--txtm);line-height:1.7;margin-bottom:16px;font-style:italic;position:relative;z-index:1}
+.test-by{font-size:12.5px;font-weight:600;color:var(--navy)}
+.test-stars{color:var(--gold);font-size:14px;margin-bottom:8px;letter-spacing:1px}
+
+/* ── BILINGUAL ───────────────────────────────── */
+.bi-sec{background:linear-gradient(135deg,var(--navy) 0%,#0D2A4A 100%);padding:72px 40px;text-align:center;position:relative;overflow:hidden}
+.bi-sec::before{content:'"';position:absolute;top:-30px;left:50%;transform:translateX(-50%);font-family:var(--serif);font-size:220px;color:rgba(200,150,10,.05);line-height:1;pointer-events:none}
+.bi-inner{max-width:740px;margin:0 auto;position:relative;z-index:1}
+.bi-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(200,150,10,.13);border:1px solid rgba(200,150,10,.28);border-radius:24px;padding:6px 16px;font-size:11px;font-weight:600;letter-spacing:.10em;text-transform:uppercase;color:var(--gold);margin-bottom:22px}
+.bi-h2{font-family:var(--serif);font-size:clamp(26px,3.8vw,42px);font-weight:700;color:#fff;line-height:1.13;margin-bottom:18px}
+.bi-h2 em{font-style:italic;color:var(--gold)}
+.bi-sub{font-size:16px;color:rgba(255,255,255,.72);margin-bottom:32px;line-height:1.75}
+.bi-btns{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+
+/* ── ABOUT ───────────────────────────────────── */
+.about-sec{background:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.about-vis{background:var(--navy);border-radius:var(--rl);padding:40px;position:relative;overflow:hidden}
+.about-vis::before{content:'';position:absolute;top:-40px;right:-40px;width:180px;height:180px;border-radius:50%;background:rgba(200,150,10,.07)}
+/* Alianza One logo in About card */
+.about-logo{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.about-logo-umb{width:80px;height:54px}
+.about-logo-text .al{font-family:var(--serif);font-size:20px;font-weight:700;color:#fff;letter-spacing:.10em;text-transform:uppercase;display:block;line-height:1.1}
+.about-logo-text .one{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--gold);letter-spacing:.14em;text-transform:uppercase;display:block;line-height:1.1}
+.about-role{font-size:11.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+.about-div{width:36px;height:2px;background:var(--gold);margin-bottom:18px}
+.about-quote{font-family:var(--serif);font-size:17px;font-style:italic;color:rgba(255,255,255,.82);line-height:1.62;margin-bottom:22px}
+.about-contacts{display:flex;flex-direction:column;gap:9px}
+.about-ci{display:flex;align-items:center;gap:9px;font-size:13px;color:rgba(255,255,255,.65)}
+.about-ci span:first-child{color:var(--gold);width:18px;flex-shrink:0}
+.about-text h3{font-family:var(--serif);font-size:26px;font-weight:700;color:var(--navy);margin-bottom:14px;line-height:1.22}
+.about-text p{font-size:15px;color:var(--txtm);line-height:1.8;margin-bottom:14px}
+.creds{display:flex;flex-direction:column;gap:9px;margin-top:24px}
+.cred{display:flex;align-items:flex-start;gap:12px;padding:11px 14px;background:var(--offwh);border-radius:var(--r);border:1px solid rgba(13,31,60,.07)}
+.cred-ic{width:30px;height:30px;background:var(--goldpale);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.cred-t strong{display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:1px}
+.cred-t span{font-size:12px;color:var(--txts)}
+
+/* ── FAQ ─────────────────────────────────────── */
+.faq-sec{background:var(--offwh)}
+.faq-grid{max-width:780px;margin:40px auto 0}
+.faq-item{background:#fff;border-radius:var(--r);border:1px solid rgba(13,31,60,.08);margin-bottom:8px;overflow:hidden;transition:var(--tr)}
+.faq-q{padding:18px 22px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;gap:16px}
+.faq-q-text{font-size:15px;font-weight:600;color:var(--navy);line-height:1.4;flex:1}
+.faq-icon{width:28px;height:28px;border-radius:50%;background:var(--goldpale);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--navy);font-size:16px;font-weight:300;transition:var(--tr)}
+.faq-item.open .faq-icon{background:var(--navy);color:var(--gold);transform:rotate(45deg)}
+.faq-a{display:none;padding:0 22px 18px;font-size:14px;color:var(--txtm);line-height:1.75}
+.faq-item.open .faq-a{display:block;padding-top:14px}
+.faq-a p{margin-bottom:10px}
+.faq-a p:last-child{margin-bottom:0}
+
+/* ── CONTACT ─────────────────────────────────── */
+.ct-sec{background:#fff}
+.ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.ct-info{padding-top:8px}
+.ct-items{display:flex;flex-direction:column;gap:22px;margin-top:36px}
+.ct-item{display:flex;align-items:flex-start;gap:14px}
+.ct-icon{width:42px;height:42px;background:var(--navy);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.ct-det strong{display:block;font-size:14px;font-weight:600;color:var(--navy);margin-bottom:2px}
+.ct-det span{font-size:14px;color:var(--txts);line-height:1.5}
+.urgency{background:rgba(200,150,10,.08);border:1px solid rgba(200,150,10,.25);border-radius:var(--r);padding:14px 16px;margin-top:24px;display:flex;align-items:flex-start;gap:10px}
+.urgency-dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:5px;animation:pulse 2s infinite}
+.urgency-text{font-size:13px;color:var(--txtm);line-height:1.6}
+.urgency-text strong{color:var(--navy)}
+.wa-contact{background:linear-gradient(135deg,#075E54,#128C7E);border-radius:var(--rl);padding:22px;margin-bottom:12px;display:flex;align-items:center;gap:16px}
+.wa-contact-text h4{font-family:var(--serif);font-size:18px;font-weight:700;color:#fff;margin-bottom:3px}
+.wa-contact-text p{font-size:13px;color:rgba(255,255,255,.75);line-height:1.5}
+.wa-contact-btn{flex-shrink:0;background:#fff;color:#075E54;border:none;border-radius:var(--r);padding:10px 18px;font-family:var(--sans);font-size:13px;font-weight:700;cursor:pointer;transition:var(--tr);white-space:nowrap;display:flex;align-items:center;gap:6px}
+.wa-contact-btn:hover{background:#F0FFF4;transform:scale(1.02)}
+.ct-form{background:var(--navy);border-radius:var(--rl);padding:36px}
+.ft{font-family:var(--serif);font-size:23px;font-weight:700;color:#fff;margin-bottom:5px}
+.fsub{font-size:14px;color:rgba(255,255,255,.55);margin-bottom:26px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.fg{margin-bottom:14px}
+.fl{display:block;font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:6px}
+.fi-el,.fs-el,.fta{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);border-radius:var(--r);padding:11px 13px;font-family:var(--sans);font-size:14px;color:#fff;transition:var(--tr);outline:none}
+.fi-el:focus,.fs-el:focus,.fta:focus{border-color:var(--gold);background:rgba(255,255,255,.10)}
+.fi-el::placeholder,.fta::placeholder{color:rgba(255,255,255,.28)}
+.fs-el{appearance:none;cursor:pointer}
+.fs-el option{background:var(--navy)}
+.fta{resize:vertical;min-height:90px}
+.fsub-btn{width:100%;background:var(--gold);color:var(--navy);border:none;border-radius:var(--r);padding:15px;font-family:var(--sans);font-size:15px;font-weight:700;cursor:pointer;transition:var(--tr);margin-top:6px}
+.fsub-btn:hover{background:var(--goldlt);transform:translateY(-2px)}
+.fnote{text-align:center;font-size:11px;color:rgba(255,255,255,.28);margin-top:10px;line-height:1.6}
+
+/* ── MOBILE STICKY BAR ───────────────────────── */
+.mob-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:200;background:var(--navy);border-top:1px solid rgba(200,150,10,.2);padding:8px 12px;gap:8px}
+.mob-call{flex:1;text-align:center;padding:13px 6px;border-radius:var(--r);font-family:var(--sans);font-size:13px;font-weight:700;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;gap:5px}
+.mob-wa{flex:1;text-align:center;padding:13px 6px;border-radius:var(--r);font-family:var(--sans);font-size:13px;font-weight:700;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;gap:5px}
+.mob-book{flex:1;text-align:center;padding:12px 6px;border-radius:var(--r);font-family:var(--sans);font-size:13px;font-weight:600;background:transparent;border:1px solid rgba(255,255,255,.2);color:#fff;display:flex;align-items:center;justify-content:center;gap:5px}
+
+/* ── FOOTER ──────────────────────────────────── */
+.ftr{background:var(--navy);padding:60px 40px 28px;border-top:1px solid rgba(200,150,10,.13)}
+.ftr-inner{max-width:1160px;margin:0 auto}
+.ftr-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:28px}
+.ftr-logo{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.ftr-logo-umb{width:60px;height:40px}
+.ftr-logo-text .al{font-family:var(--serif);font-size:16px;font-weight:700;color:#fff;letter-spacing:.10em;text-transform:uppercase;line-height:1.1}
+.ftr-logo-text .one{font-family:var(--serif);font-size:16px;font-weight:700;color:var(--gold);letter-spacing:.14em;text-transform:uppercase;line-height:1.1}
+.ftr-tline{font-size:13.5px;color:rgba(255,255,255,.5);line-height:1.7;margin-bottom:18px;max-width:250px}
+.fcol-h{font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.flinks{display:flex;flex-direction:column;gap:8px}
+.flinks a{font-size:13px;color:rgba(255,255,255,.5);transition:var(--tr)}
+.flinks a:hover{color:#fff;padding-left:4px}
+.ftr-bot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.fcopy{font-size:12px;color:rgba(255,255,255,.28)}
+.fdisclaimer{font-size:10.5px;color:rgba(255,255,255,.2);max-width:700px;line-height:1.6;margin-top:14px}
+
+/* ── DEV NOTES ───────────────────────────────── */
+.dev-notes{background:#0D1E38;border-top:2px solid rgba(200,150,10,.2)}
+.dev-toggle{width:100%;background:none;border:none;cursor:pointer;padding:14px 24px;display:flex;align-items:center;gap:10px;font-family:var(--sans);font-size:13px;font-weight:600;color:var(--gold);letter-spacing:.06em}
+.dev-toggle::before{content:'▶';font-size:10px;transition:var(--tr)}
+.dev-notes.open .dev-toggle::before{content:'▼'}
+.dev-content{display:none;padding:20px 24px 28px;font-size:13px;color:rgba(255,255,255,.7);line-height:1.75;border-top:1px solid rgba(200,150,10,.12)}
+.dev-notes.open .dev-content{display:block}
+.dev-content h4{color:var(--gold);font-size:13px;font-weight:600;margin:16px 0 6px}
+.dev-content h4:first-child{margin-top:0}
+
+/* ── RESPONSIVE ──────────────────────────────── */
+@media(max-width:900px){
+  .nav{padding:0 14px;top:44px}
+  .nlinks{display:none}
+  .hbg{display:flex}
+  .hero-inner{grid-template-columns:1fr;gap:0;padding:52px 20px}
+  .hcard{display:none}
+  .sec{padding:60px 20px}
+  .ls-sec{padding:60px 20px}
+  .risk-sec{padding:52px 20px}
+  .bi-sec{padding:60px 20px}
+  .risk-grid{grid-template-columns:1fr}
+  .risk-vs{flex-direction:column}
+  .svc-grid{grid-template-columns:1fr}
+  .proc-grid{grid-template-columns:1fr 1fr}
+  .proc-grid::before{display:none}
+  .ls-stats{grid-template-columns:1fr}
+  .ls-stat:not(:last-child)::after{display:none}
+  .ls-stat:not(:last-child){border-bottom:1px solid rgba(200,150,10,.1)}
+  .ls-plans{grid-template-columns:1fr}
+  .ids-strip{flex-direction:column;text-align:center}
+  .test-grid{grid-template-columns:1fr}
+  .test-hero{grid-column:auto}
+  .about-grid{grid-template-columns:1fr;gap:36px}
+  .ct-grid{grid-template-columns:1fr;gap:40px}
+  .frow{grid-template-columns:1fr}
+  .ftr-top{grid-template-columns:1fr 1fr;gap:28px}
+  .mob-bar{display:flex}
+  body{padding-bottom:70px}
+  .ubar-hours{display:none}
+}
+@media(max-width:760px){
+  .svc-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .proc-grid{grid-template-columns:1fr}
+  .ftr-top{grid-template-columns:1fr}
+  .hh1{font-size:36px}
+  .hactions{flex-direction:column;align-items:flex-start}
+  .ls-plans{grid-template-columns:1fr}
+  .bi-btns{flex-direction:column;align-items:stretch}
+}
+</style>
+</head>
+
+<!-- ═══════════════════════════════ UMBRELLA SVG INLINE DEF ═══════════════ -->
+<!-- Used in nav, about card, footer via <use> or inline repetition         -->
+
+<body class="lang-en">
+
+<!-- ══════════════════════════════════════════
+     TIER 1 — UTILITY BAR
+     ══════════════════════════════════════════ -->
+<div class="ubar">
+  <div class="ubar-left">
+    <a href="tel:4706427978" class="ubar-phone">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 12.9a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      470-642-7978
+    </a>
+    <a href="https://wa.me/14706427978?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" class="ubar-wa">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+    <span class="ubar-hours" data-en>Mon–Fri &nbsp; 9am – 6pm</span>
+    <span class="ubar-hours" data-es>Lun–Vie &nbsp; 9am – 6pm</span>
+  </div>
+  <div class="ubar-right">
+    <div class="lsw">
+      <button class="lbtn active" onclick="setLang('en')" id="btn-en">EN</button>
+      <button class="lbtn" onclick="setLang('es')" id="btn-es">ES</button>
+    </div>
+    <span class="ubar-note">FR · PT soon</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     TIER 2 — MAIN NAVIGATION
+     ══════════════════════════════════════════ -->
+<nav class="nav" id="mainnav">
+  <a href="#home" class="nlogo">
+    <!-- Alianza One umbrella mark — inline SVG per brand standards -->
+    <svg class="nlogo-umbrella" style="width:48px;height:32px" viewBox="0 0 240 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dome fill -->
+  <path d="M 30,95 A 90,90 0 0,1 210,95 Z" fill="#C8960A" opacity="0.12"/>
+  <!-- Dome outline -->
+  <path d="M 30,95 A 90,90 0 0,1 210,95 Z" fill="none" stroke="#C8960A" stroke-width="2"/>
+  <!-- Negative space arches (navy cutouts) — dark fill matches background -->
+  <path d="M 100,95 A 20,26 0 0,1 140,95 Z" fill="#0D1F3C"/>
+  <path d="M 57,95 A 13,17 0 0,1 83,95 Z" fill="#0D1F3C"/>
+  <path d="M 157,95 A 13,17 0 0,1 183,95 Z" fill="#0D1F3C"/>
+  <!-- Inner diagonal lines -->
+  <line x1="120" y1="8" x2="30" y2="95" stroke="#C8960A" stroke-width="2.8" opacity="0.8"/>
+  <line x1="120" y1="8" x2="210" y2="95" stroke="#C8960A" stroke-width="1.4" opacity="0.4"/>
+  <!-- Gold brim bar -->
+  <rect x="30" y="91" width="180" height="9" fill="#C8960A" rx="1"/>
+  <!-- Gold handle -->
+  <path d="M 120,100 L 120,126 Q 120,140 107,140 Q 95,140 95,130" fill="none" stroke="#C8960A" stroke-width="5.5" stroke-linecap="round"/>
+  <!-- Apex dot -->
+  <circle cx="120" cy="8" r="5" fill="#C8960A"/>
+</svg>
+    <div class="nlogo-text">
+      <span class="nlogo-alianza">Alianza</span>
+      <span class="nlogo-one">One</span>
+    </div>
+  </a>
+
+  <div class="nlinks">
+    <a href="#services" data-en>Services</a>
+    <a href="#services" data-es>Servicios</a>
+    <a href="#legalshield" data-en>LegalShield</a>
+    <a href="#legalshield" data-es>LegalShield</a>
+    <a href="#about" data-en>About</a>
+    <a href="#about" data-es>Nosotros</a>
+    <a href="#faq" data-en>FAQ</a>
+    <a href="#faq" data-es>FAQ</a>
+    <a href="#contact" class="ncta" data-en>Free Consultation</a>
+    <a href="#contact" class="ncta" data-es>Consulta Gratis</a>
+    <a href="https://wa.me/14706427978?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" class="nwa" data-en>💬 WhatsApp</a>
+    <a href="https://wa.me/14706427978?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" class="nwa" data-es>💬 WhatsApp</a>
+    <div class="lsw nav-lsw">
+      <button class="lbtn" onclick="setLang('en')" id="nav-btn-en">EN</button>
+      <button class="lbtn" onclick="setLang('es')" id="nav-btn-es">ES</button>
+    </div>
+  </div>
+  <div class="hbg" onclick="toggleMenu()" id="hbg">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile nav drawer -->
+<div id="navDrawer" style="display:none;position:fixed;top:110px;left:0;right:0;background:rgba(13,31,60,.99);backdrop-filter:blur(12px);padding:18px 20px 22px;z-index:198;border-bottom:1px solid rgba(200,150,10,.2);flex-direction:column;gap:4px">
+  <a href="#services" onclick="closeDrawer()" style="padding:13px 12px;color:rgba(255,255,255,.8);font-size:16px;font-weight:500;border-radius:8px;display:block" data-en>Services</a>
+  <a href="#services" onclick="closeDrawer()" style="padding:13px 12px;color:rgba(255,255,255,.8);font-size:16px;font-weight:500;border-radius:8px;display:block" data-es>Servicios</a>
+  <a href="#legalshield" onclick="closeDrawer()" style="padding:13px 12px;color:rgba(255,255,255,.8);font-size:16px;font-weight:500;border-radius:8px;display:block" data-en>LegalShield</a>
+  <a href="#legalshield" onclick="closeDrawer()" style="padding:13px 12px;color:rgba(255,255,255,.8);font-size:16px;font-weight:500;border-radius:8px;display:block" data-es>LegalShield</a>
+  <a href="#about" onclick="closeDrawer()" style="padding:13px 12px;color:rgba(255,255,255,.8);font-size:16px;font-weight:500;border-radius:8px;display:block" data-en>About</a>
+  <a href="#about" onclick="closeDrawer()" style="padding:13px 12px;color:rgba(255,255,255,.8);font-size:16px;font-weight:500;border-radius:8px;display:block" data-es>Nosotros</a>
+  <a href="#faq" onclick="closeDrawer()" style="padding:13px 12px;color:rgba(255,255,255,.8);font-size:16px;font-weight:500;border-radius:8px;display:block" data-en>FAQ</a>
+  <a href="#faq" onclick="closeDrawer()" style="padding:13px 12px;color:rgba(255,255,255,.8);font-size:16px;font-weight:500;border-radius:8px;display:block" data-es>FAQ</a>
+  <a href="#contact" onclick="closeDrawer()" style="padding:14px 20px;background:var(--gold);color:var(--navy);font-size:16px;font-weight:700;border-radius:8px;text-align:center;margin-top:8px;display:block" data-en>Free Consultation</a>
+  <a href="#contact" onclick="closeDrawer()" style="padding:14px 20px;background:var(--gold);color:var(--navy);font-size:16px;font-weight:700;border-radius:8px;text-align:center;margin-top:8px;display:block" data-es>Consulta Gratis</a>
+  <a href="https://wa.me/14706427978?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" style="padding:14px 20px;background:var(--green);color:#fff;font-size:16px;font-weight:700;border-radius:8px;text-align:center;margin-top:8px;display:block">💬 WhatsApp</a>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HERO
+     ══════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hbadge fi">
+        <div class="hbadge-dot"></div>
+        <span data-en>Salt Lake City, Utah &nbsp;·&nbsp; Est. 2026 &nbsp;·&nbsp; Bilingual EN/ES</span>
+        <span data-es>Salt Lake City, Utah &nbsp;·&nbsp; Est. 2026 &nbsp;·&nbsp; Bilingüe EN/ES</span>
+      </div>
+      <h1 class="hh1 fi fi1">
+        <span data-en>One Trusted Partner.<br><em>Nine Professional Services.<br>No Barriers.</em></span>
+        <span data-es>Un Socio de Confianza.<br><em>Nueve Servicios Profesionales.<br>Sin Barreras.</em></span>
+      </h1>
+      <p class="hsub fi fi2">
+        <span data-en>Alianza One LLC is the bilingual professional partner that Salt Lake City's families and small business owners have always needed. Legal protection, immigration, business, financial — all under one umbrella.</span>
+        <span data-es>Alianza One LLC es el socio profesional bilingüe que las familias y pequeñas empresas de Salt Lake City siempre han necesitado. Protección legal, inmigración, negocios, finanzas — todo bajo un mismo paraguas.</span>
+      </p>
+      <div class="hactions fi fi2">
+        <a href="#contact" class="btn-p">
+          <span data-en>Get Free Consultation →</span>
+          <span data-es>Consulta Gratis →</span>
+        </a>
+        <a href="https://wa.me/14706427978?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" class="btn-wa">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span data-en>WhatsApp Us</span>
+          <span data-es>Escríbenos</span>
+        </a>
+      </div>
+      <div class="hphone fi fi2">
+        <span data-en>Or call now: </span>
+        <span data-es>O llámanos: </span>
+        <a href="tel:4706427978">470-642-7978</a>
+      </div>
+      <div class="hstats fi fi3">
+        <div><div class="hstat-n">9</div><div class="hstat-l" data-en>Service Lines</div><div class="hstat-l" data-es>Servicios</div></div>
+        <div class="hstat-div"></div>
+        <div><div class="hstat-n">2</div><div class="hstat-l" data-en>Languages</div><div class="hstat-l" data-es>Idiomas</div></div>
+        <div class="hstat-div"></div>
+        <div><div class="hstat-n">$0</div><div class="hstat-l" data-en>Consult Fee</div><div class="hstat-l" data-es>Consulta</div></div>
+        <div class="hstat-div"></div>
+        <div><div class="hstat-n">24/7</div><div class="hstat-l" data-en>Attorney*</div><div class="hstat-l" data-es>Abogado*</div></div>
+      </div>
+    </div>
+    <!-- Hero card — desktop -->
+    <div class="hcard">
+      <div class="hcard-title" data-en>Nine Services. One Alliance.</div>
+      <div class="hcard-title" data-es>Nueve Servicios. Una Alianza.</div>
+      <div class="spills">
+        <span class="spill" data-en>🛡️ LegalShield</span>
+        <span class="spill" data-en>🏢 Business Formation</span>
+        <span class="spill" data-en>🌎 Immigration</span>
+        <span class="spill" data-en>💰 Tax Prep</span>
+        <span class="spill" data-en>🔏 Notary</span>
+        <span class="spill" data-en>⚖️ Mediation</span>
+        <span class="spill" data-en>📊 Bookkeeping</span>
+        <span class="spill" data-en>📈 Profit First</span>
+        <span class="spill" data-en>🏛️ Court Interpretation</span>
+        <span class="spill" data-es>🛡️ LegalShield</span>
+        <span class="spill" data-es>🏢 Formación Empresarial</span>
+        <span class="spill" data-es>🌎 Inmigración</span>
+        <span class="spill" data-es>💰 Impuestos</span>
+        <span class="spill" data-es>🔏 Notario</span>
+        <span class="spill" data-es>⚖️ Mediación</span>
+        <span class="spill" data-es>📊 Contabilidad</span>
+        <span class="spill" data-es>📈 Profit First</span>
+        <span class="spill" data-es>🏛️ Interpretación Judicial</span>
+      </div>
+      <a href="#contact" class="hcard-cta" data-en>Schedule Free Consultation</a>
+      <a href="#contact" class="hcard-cta" data-es>Agendar Consulta Gratis</a>
+      <a href="https://wa.me/14706427978?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" class="hcard-wa">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span data-en>Chat on WhatsApp</span>
+        <span data-es>Chatear por WhatsApp</span>
+      </a>
+      <p class="hcard-note" data-en>*Family plan $49.95/mo &nbsp;·&nbsp; Business plan $99/mo &nbsp;·&nbsp; *24/7 via LegalShield</p>
+      <p class="hcard-note" data-es>*Plan familiar $49.95/mes &nbsp;·&nbsp; Empresarial $99/mes &nbsp;·&nbsp; *24/7 vía LegalShield</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     RISK / PAIN SECTION
+     ══════════════════════════════════════════ -->
+<section class="risk-sec" id="risk">
+  <div class="risk-inner">
+    <div style="text-align:center;margin-bottom:36px">
+      <span class="stag" data-en>The Cost of Being Unprotected</span>
+      <span class="stag" data-es>El Costo de Estar Desprotegido</span>
+      <h2 class="sh2 sh2w fi" style="text-align:center;margin-bottom:8px">
+        <span data-en>One Legal Problem Can Change <em>Everything</em></span>
+        <span data-es>Un Problema Legal Puede Cambiarlo <em>Todo</em></span>
+      </h2>
+      <p style="color:rgba(255,255,255,.6);font-size:16px;max-width:560px;margin:0 auto" data-en>Without the right partner, everyday situations become costly emergencies.</p>
+      <p style="color:rgba(255,255,255,.6);font-size:16px;max-width:560px;margin:0 auto" data-es>Sin el socio correcto, situaciones cotidianas se convierten en emergencias costosas.</p>
+    </div>
+    <div class="risk-grid fi">
+      <div class="risk-card">
+        <div class="risk-icon">📝</div>
+        <div class="risk-title" data-en>A Badly Signed Contract</div>
+        <div class="risk-title" data-es>Un Contrato Mal Firmado</div>
+        <p class="risk-desc">
+          <span data-en>One clause you didn't understand can cost thousands in disputes or penalties. Attorneys charge $400–$600/hr to fix what a simple contract review could have prevented.</span>
+          <span data-es>Una cláusula que no entendiste puede costarte miles. Los abogados cobran $400–$600/hr para arreglar lo que una revisión habría prevenido.</span>
+        </p>
+        <span class="risk-cost" data-en>Without help: $2,000–$15,000+</span>
+        <span class="risk-cost" data-es>Sin ayuda: $2,000–$15,000+</span>
+      </div>
+      <div class="risk-card">
+        <div class="risk-icon">🌎</div>
+        <div class="risk-title" data-en>An Immigration Form Error</div>
+        <div class="risk-title" data-es>Un Error en Formularios de Inmigración</div>
+        <p class="risk-desc">
+          <span data-en>A single mistake on a USCIS form can delay your case by months or years, trigger a denial, or put your status at risk. The consequences are life-changing.</span>
+          <span data-es>Un solo error en un formulario de USCIS puede retrasar tu caso por meses o años, provocar una negación o poner en riesgo tu estatus migratorio.</span>
+        </p>
+        <span class="risk-cost" data-en>Without help: Months of delays + re-filing fees</span>
+        <span class="risk-cost" data-es>Sin ayuda: Meses de retrasos + cargos de re-presentación</span>
+      </div>
+      <div class="risk-card">
+        <div class="risk-icon">🔒</div>
+        <div class="risk-title" data-en>Identity Theft — At Any Time</div>
+        <div class="risk-title" data-es>Robo de Identidad — En Cualquier Momento</div>
+        <p class="risk-desc">
+          <span data-en>"A Friday night, $10,000 was stolen from my account. IDShield's investigators restored my money before Monday morning — when the bank told me it would take two weeks." — Richard Estrada, Member</span>
+          <span data-es>"Un viernes en la noche me robaron $10,000 de mi cuenta. Los investigadores de IDShield me restauraron ese dinero antes del lunes — cuando el banco decía que tardaban dos semanas." — Richard Estrada, Miembro</span>
+        </p>
+        <span class="risk-cost" data-en>Without IDShield: $10,000+ at risk</span>
+        <span class="risk-cost" data-es>Sin IDShield: $10,000+ en riesgo</span>
+      </div>
+    </div>
+    <div class="risk-vs fi">
+      <div class="risk-vs-box">
+        <div class="risk-vs-label" data-en>Traditional Attorney</div>
+        <div class="risk-vs-label" data-es>Abogado Tradicional</div>
+        <div class="risk-vs-val">$300–$600<span style="font-size:13px;font-weight:400;color:rgba(255,255,255,.5)" data-en>/hour</span><span style="font-size:13px;font-weight:400;color:rgba(255,255,255,.5)" data-es>/hora</span></div>
+      </div>
+      <div class="risk-arrow">→</div>
+      <div class="risk-vs-box hi">
+        <div class="risk-vs-label" data-en>Premium Family Plan</div>
+        <div class="risk-vs-label" data-es>Plan Familiar Premium</div>
+        <div class="risk-vs-val gold">$49.95<span style="font-size:13px;font-weight:400;color:rgba(255,255,255,.5)" data-en>/mo Unlimited</span><span style="font-size:13px;font-weight:400;color:rgba(255,255,255,.5)" data-es>/mes Ilimitado</span></div>
+        <div class="risk-vs-sub" data-en>Spouse + Dependents under 26</div>
+        <div class="risk-vs-sub" data-es>Cónyuge + Dependientes &lt;26</div>
+      </div>
+      <div class="risk-arrow">+</div>
+      <div class="risk-vs-box hi">
+        <div class="risk-vs-label" data-en>Small Business Plan</div>
+        <div class="risk-vs-label" data-es>Plan Empresarial</div>
+        <div class="risk-vs-val gold">$99<span style="font-size:13px;font-weight:400;color:rgba(255,255,255,.5)" data-en>/mo Unlimited</span><span style="font-size:13px;font-weight:400;color:rgba(255,255,255,.5)" data-es>/mes Ilimitado</span></div>
+        <div class="risk-vs-sub" data-en>vs $300–$600/hr attorney</div>
+        <div class="risk-vs-sub" data-es>vs $300–$600/hr abogado</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SERVICES — 9 cards per Brand Standards Slide 8
+     01 LegalShield · 02 Business Formation · 03 Immigration
+     04 Tax Prep · 05 Notary · 06 Mediation
+     07 Bookkeeping · 08 Profit First · 09 Court Interpretation
+     ══════════════════════════════════════════ -->
+<section class="sec svc-sec" id="services">
+  <div class="sinner">
+    <span class="stag" data-en>Nine Professional Services</span>
+    <span class="stag" data-es>Nueve Servicios Profesionales</span>
+    <h2 class="sh2 fi"><span data-en>One Trusted Partner for <em>Everything You Need</em></span><span data-es>Un Socio de Confianza para <em>Todo lo que Necesitas</em></span></h2>
+    <p class="ssub fi"><span data-en>Protection, formation, and advocacy — all under the Alianza One umbrella, in English and Spanish.</span><span data-es>Protección, formación y asesoría — todo bajo el paraguas de Alianza One, en inglés y español.</span></p>
+    <div class="svc-grid">
+
+      <!-- 01 LegalShield -->
+      <div class="svc-card fi">
+        <div class="svc-num">01</div>
+        <div class="svc-icon">🛡️</div>
+        <div class="svc-lbl" data-en>Legal Protection</div>
+        <div class="svc-lbl" data-es>Protección Legal</div>
+        <h3 class="svc-h"><span data-en>24/7 Attorney Access for the Price of a Daily Coffee</span><span data-es>Acceso a Abogados 24/7 por el Precio de un Café Diario</span></h3>
+        <p class="svc-p"><span data-en>LegalShield connects you to qualified attorneys any time — day, night, weekend. Flat monthly fee, no surprises.</span><span data-es>LegalShield te conecta con abogados calificados en cualquier momento. Cuota mensual fija, sin sorpresas.</span></p>
+        <ul class="svc-list">
+          <li data-en>Unlimited attorney consultations</li>
+          <li data-en>Emergency 24/7 legal line</li>
+          <li data-en>Family plan $49.95/mo · Business plan $99/mo</li>
+          <li data-en>Will &amp; estate document preparation</li>
+          <li data-es>Consultas ilimitadas con abogados</li>
+          <li data-es>Línea legal de emergencia 24/7</li>
+          <li data-es>Plan familiar $49.95/mes · Empresarial $99/mes</li>
+          <li data-es>Preparación de testamentos y documentos</li>
+        </ul>
+        <a href="#legalshield" class="svc-link"><span data-en>View Plans →</span><span data-es>Ver Planes →</span></a>
+      </div>
+
+      <!-- 02 Business Formation -->
+      <div class="svc-card fi fi1">
+        <div class="svc-num">02</div>
+        <div class="svc-icon">🏢</div>
+        <div class="svc-lbl" data-en>Business Formation</div>
+        <div class="svc-lbl" data-es>Formación de Empresas</div>
+        <h3 class="svc-h"><span data-en>Turn Your Business Idea Into an Official LLC — This Week</span><span data-es>Convierte Tu Idea en una LLC Oficial — Esta Semana</span></h3>
+        <p class="svc-p"><span data-en>We handle the filings, registrations, and setup so your business is legally recognized and ready to operate in Utah.</span><span data-es>Manejamos los registros y la configuración para que tu negocio esté listo para operar en Utah.</span></p>
+        <ul class="svc-list">
+          <li data-en>LLC &amp; corporation filings</li>
+          <li data-en>EIN application assistance</li>
+          <li data-en>DBA &amp; annual report support</li>
+          <li data-en>Business licensing research</li>
+          <li data-es>Registro de LLC y corporaciones</li>
+          <li data-es>Solicitud de EIN</li>
+          <li data-es>DBA e informes anuales</li>
+          <li data-es>Investigación de licencias comerciales</li>
+        </ul>
+        <a href="#contact" class="svc-link"><span data-en>Launch My Business →</span><span data-es>Lanzar Mi Negocio →</span></a>
+      </div>
+
+      <!-- 03 Immigration -->
+      <div class="svc-card fi fi2">
+        <div class="svc-num">03</div>
+        <div class="svc-icon">🌎</div>
+        <div class="svc-lbl" data-en>Immigration Form Assistance</div>
+        <div class="svc-lbl" data-es>Formularios de Inmigración</div>
+        <h3 class="svc-h"><span data-en>Navigate USCIS Paperwork With Confidence — In English or Spanish</span><span data-es>Navega el Papeleo de USCIS con Confianza — En Inglés o Español</span></h3>
+        <p class="svc-p"><span data-en>Our registered immigration consultant helps you complete forms accurately and gather supporting documents.</span><span data-es>Nuestro consultor registrado te ayuda a completar formularios con precisión y reunir documentos de apoyo.</span></p>
+        <ul class="svc-list">
+          <li data-en>USCIS form completion assistance</li>
+          <li data-en>Document translation &amp; gathering</li>
+          <li data-en>Bilingual intake &amp; support</li>
+          <li data-en>Referral to licensed attorneys</li>
+          <li data-es>Asistencia para formularios USCIS</li>
+          <li data-es>Traducción y recopilación de documentos</li>
+          <li data-es>Atención bilingüe</li>
+          <li data-es>Referidos a abogados con licencia</li>
+        </ul>
+        <a href="#contact" class="svc-link"><span data-en>Get Help Now →</span><span data-es>Obtener Ayuda →</span></a>
+      </div>
+
+      <!-- 04 Tax Preparation -->
+      <div class="svc-card fi">
+        <div class="svc-num">04</div>
+        <div class="svc-icon">💰</div>
+        <div class="svc-lbl" data-en>Tax Preparation &amp; Filing</div>
+        <div class="svc-lbl" data-es>Preparación de Impuestos</div>
+        <h3 class="svc-h"><span data-en>Stop Missing Deductions That Put Money Back in Your Pocket</span><span data-es>Deja de Perder Deducciones que Regresan Dinero a Tu Bolsillo</span></h3>
+        <p class="svc-p"><span data-en>Federal and state returns for individuals and businesses — by credentialed PTIN-holding preparers.</span><span data-es>Declaraciones federales y estatales para individuos y negocios — por profesionales certificados con PTIN activo.</span></p>
+        <ul class="svc-list">
+          <li data-en>Individual &amp; business tax returns</li>
+          <li data-en>Sales &amp; use tax support</li>
+          <li data-en>IRS correspondence assistance</li>
+          <li data-en>Tax planning consultations</li>
+          <li data-es>Declaraciones individuales y empresariales</li>
+          <li data-es>Impuestos sobre ventas</li>
+          <li data-es>Correspondencia con el IRS</li>
+          <li data-es>Planificación tributaria</li>
+        </ul>
+        <a href="#contact" class="svc-link"><span data-en>File My Taxes →</span><span data-es>Declarar Mis Impuestos →</span></a>
+      </div>
+
+      <!-- 05 Notary -->
+      <div class="svc-card fi fi1">
+        <div class="svc-num">05</div>
+        <div class="svc-icon">🔏</div>
+        <div class="svc-lbl" data-en>Notary Services</div>
+        <div class="svc-lbl" data-es>Servicios de Notario</div>
+        <h3 class="svc-h"><span data-en>Utah-Licensed Notary — Documents Done Right, First Time</span><span data-es>Notario Licenciado en Utah — Documentos Bien Hechos Desde el Principio</span></h3>
+        <p class="svc-p"><span data-en>Properly notarized documents accepted by courts, government agencies, and financial institutions — in English and Spanish.</span><span data-es>Documentos notariados aceptados por tribunales, agencias gubernamentales e instituciones financieras — en inglés y español.</span></p>
+        <ul class="svc-list">
+          <li data-en>Utah state-licensed notary public</li>
+          <li data-en>Affidavits, contracts &amp; legal documents</li>
+          <li data-en>Bilingual document notarization</li>
+          <li data-en>Mobile notary available</li>
+          <li data-es>Notario público con licencia de Utah</li>
+          <li data-es>Affidávits, contratos y documentos legales</li>
+          <li data-es>Notarización de documentos bilingüe</li>
+          <li data-es>Notario móvil disponible</li>
+        </ul>
+        <a href="#contact" class="svc-link"><span data-en>Notarize Documents →</span><span data-es>Notarizar Documentos →</span></a>
+      </div>
+
+      <!-- 06 Mediation -->
+      <div class="svc-card fi fi2">
+        <div class="svc-num">06</div>
+        <div class="svc-icon">⚖️</div>
+        <div class="svc-lbl" data-en>Mediation</div>
+        <div class="svc-lbl" data-es>Mediación</div>
+        <h3 class="svc-h"><span data-en>Resolve Conflicts Without the $400/hr Attorney Bill</span><span data-es>Resuelve Conflictos Sin Honorarios de $400/hr de Abogado</span></h3>
+        <p class="svc-p"><span data-en>Professional bilingual mediation that helps both parties reach fair agreements — faster, cheaper, and less stressful than litigation.</span><span data-es>Mediación profesional bilingüe que ayuda a ambas partes a llegar a acuerdos justos — más rápido, más económico y menos estresante que litigar.</span></p>
+        <ul class="svc-list">
+          <li data-en>Civil &amp; commercial dispute mediation</li>
+          <li data-en>Landlord-tenant conflict resolution</li>
+          <li data-en>Business partner disputes</li>
+          <li data-en>Bilingual sessions (EN/ES)</li>
+          <li data-es>Mediación civil y comercial</li>
+          <li data-es>Resolución de conflictos arrendatario-propietario</li>
+          <li data-es>Disputas entre socios de negocios</li>
+          <li data-es>Sesiones bilingüe (EN/ES)</li>
+        </ul>
+        <a href="#contact" class="svc-link"><span data-en>Start Mediation →</span><span data-es>Iniciar Mediación →</span></a>
+      </div>
+
+      <!-- 07 Bookkeeping -->
+      <div class="svc-card fi">
+        <div class="svc-num">07</div>
+        <div class="svc-icon">📊</div>
+        <div class="svc-lbl" data-en>Bookkeeping &amp; Accounting</div>
+        <div class="svc-lbl" data-es>Contabilidad y Finanzas</div>
+        <h3 class="svc-h"><span data-en>Always Know Exactly Where Your Business Money Stands</span><span data-es>Siempre Sabe Exactamente Dónde Están las Finanzas de Tu Negocio</span></h3>
+        <p class="svc-p"><span data-en>Clean books, timely reports, and organized finances — so tax season is never a nightmare again.</span><span data-es>Libros limpios, reportes puntuales y finanzas organizadas — para que la temporada de impuestos nunca sea una pesadilla.</span></p>
+        <ul class="svc-list">
+          <li data-en>Monthly bookkeeping &amp; reconciliations</li>
+          <li data-en>Payroll processing support</li>
+          <li data-en>QuickBooks setup &amp; training</li>
+          <li data-en>Cash flow &amp; budget reporting</li>
+          <li data-es>Contabilidad mensual y conciliaciones</li>
+          <li data-es>Procesamiento de nómina</li>
+          <li data-es>Configuración de QuickBooks</li>
+          <li data-es>Reportes de flujo de caja</li>
+        </ul>
+        <a href="#contact" class="svc-link"><span data-en>Clean Up My Books →</span><span data-es>Organizar Mis Finanzas →</span></a>
+      </div>
+
+      <!-- 08 Profit First Advisory -->
+      <div class="svc-card fi fi1">
+        <div class="svc-num">08</div>
+        <div class="svc-icon">📈</div>
+        <div class="svc-lbl" data-en>Profit First Advisory</div>
+        <div class="svc-lbl" data-es>Asesoría Profit First</div>
+        <h3 class="svc-h"><span data-en>Build a Business That Actually Pays You — Every Month</span><span data-es>Construye un Negocio que Realmente te Pague — Cada Mes</span></h3>
+        <p class="svc-p"><span data-en>The Profit First method allocates income into dedicated accounts so your business is always profitable, tax-ready, and sustainable.</span><span data-es>El método Profit First asigna ingresos en cuentas dedicadas para que tu negocio sea siempre rentable, listo para impuestos y sostenible.</span></p>
+        <ul class="svc-list">
+          <li data-en>Profit First system setup &amp; coaching</li>
+          <li data-en>Multi-account banking structure design</li>
+          <li data-en>Monthly allocation reviews</li>
+          <li data-en>Owner pay &amp; tax reserve strategy</li>
+          <li data-es>Configuración y coaching del sistema Profit First</li>
+          <li data-es>Diseño de estructura bancaria multi-cuenta</li>
+          <li data-es>Revisiones mensuales de asignación</li>
+          <li data-es>Estrategia de pago del dueño y reserva de impuestos</li>
+        </ul>
+        <a href="#contact" class="svc-link"><span data-en>Start Profit First →</span><span data-es>Iniciar Profit First →</span></a>
+      </div>
+
+      <!-- 09 Court Interpretation -->
+      <div class="svc-card fi fi2">
+        <div class="svc-num">09</div>
+        <div class="svc-icon">🏛️</div>
+        <div class="svc-lbl" data-en>Court Interpretation</div>
+        <div class="svc-lbl" data-es>Interpretación Judicial</div>
+        <h3 class="svc-h"><span data-en>Your Voice, Clearly Heard — in Every Courtroom</span><span data-es>Tu Voz, Claramente Escuchada — en Cada Tribunal</span></h3>
+        <p class="svc-p"><span data-en>Professional bilingual court interpretation so nothing is lost in translation when it matters most — in hearings, depositions, and legal proceedings.</span><span data-es>Interpretación judicial bilingüe profesional para que nada se pierda en la traducción cuando más importa — en audiencias y procedimientos legales.</span></p>
+        <ul class="svc-list">
+          <li data-en>Court hearings &amp; proceedings</li>
+          <li data-en>Depositions &amp; legal interviews</li>
+          <li data-en>Administrative hearings</li>
+          <li data-en>Consecutive &amp; simultaneous EN/ES</li>
+          <li data-es>Audiencias y procedimientos judiciales</li>
+          <li data-es>Deposiciones y entrevistas legales</li>
+          <li data-es>Audiencias administrativas</li>
+          <li data-es>Interpretación consecutiva y simultánea EN/ES</li>
+        </ul>
+        <a href="#contact" class="svc-link"><span data-en>Book Interpreter →</span><span data-es>Reservar Intérprete →</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PROCESS — 4 steps
+     ══════════════════════════════════════════ -->
+<section class="sec proc-sec" id="process">
+  <div class="sinner">
+    <span class="stag" data-en>How It Works</span>
+    <span class="stag" data-es>Cómo Funciona</span>
+    <h2 class="sh2 fi"><span data-en>From First Call to Done<br><em>— In 4 Simple Steps</em></span><span data-es>De la Primera Llamada a Completado<br><em>— En 4 Pasos Simples</em></span></h2>
+    <p class="ssub fi"><span data-en>We've made the process simple, transparent, and stress-free.</span><span data-es>Hemos hecho el proceso simple, transparente y sin estrés.</span></p>
+    <div class="proc-grid">
+      <div class="pstep fi">
+        <div class="pnum">1</div>
+        <h4 class="ptitle" data-en>Free Consultation</h4>
+        <h4 class="ptitle" data-es>Consulta Gratis</h4>
+        <p class="pdesc"><span data-en>Tell us what you need. We listen and give you a clear plan — no obligation.</span><span data-es>Cuéntanos qué necesitas. Escuchamos y te damos un plan claro — sin compromiso.</span></p>
+      </div>
+      <div class="pstep fi fi1">
+        <div class="pnum">2</div>
+        <h4 class="ptitle" data-en>Custom Proposal</h4>
+        <h4 class="ptitle" data-es>Propuesta Personalizada</h4>
+        <p class="pdesc"><span data-en>You receive a written scope, timeline, and flat-rate fee — no surprises.</span><span data-es>Recibes un alcance escrito, cronograma y tarifa fija — sin sorpresas.</span></p>
+      </div>
+      <div class="pstep fi fi2">
+        <div class="pnum">3</div>
+        <h4 class="ptitle" data-en>We Handle It</h4>
+        <h4 class="ptitle" data-es>Nosotros lo Hacemos</h4>
+        <p class="pdesc"><span data-en>We prepare, file, and complete your documents — keeping you updated throughout.</span><span data-es>Preparamos, presentamos y completamos tus documentos — manteniéndote informado.</span></p>
+      </div>
+      <div class="pstep fi fi3">
+        <div class="pnum">4</div>
+        <h4 class="ptitle" data-en>You Move Forward</h4>
+        <h4 class="ptitle" data-es>Tú Avanzas</h4>
+        <p class="pdesc"><span data-en>Your business is ready. Your documents are done. You're set to succeed.</span><span data-es>Tu negocio está listo. Tus documentos están completos. Estás listo para el éxito.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     LEGALSHIELD — Stats + 3 Plan Cards + IDShield
+     ══════════════════════════════════════════ -->
+<section class="ls-sec" id="legalshield">
+  <div class="ls-inner">
+    <div style="text-align:center;margin-bottom:48px">
+      <span class="stag" data-en>LegalShield Plans</span>
+      <span class="stag" data-es>Planes LegalShield</span>
+      <h2 class="sh2 sh2w fi"><span data-en>Half a Century of <em>Proven Legal Protection</em></span><span data-es>Medio Siglo de <em>Protección Legal Comprobada</em></span></h2>
+      <p class="ssubw fi" style="margin:0 auto;text-align:center"><span data-en>Access top attorneys for a flat monthly fee. I enroll you and support you as your LegalShield Associate Manager.</span><span data-es>Accede a abogados de primer nivel por una cuota mensual fija. Te inscribo y apoyo como tu Gerente Asociado LegalShield.</span></p>
+    </div>
+    <div class="ls-stats fi">
+      <div class="ls-stat">
+        <div class="ls-stat-num">50<span style="font-size:clamp(24px,3vw,40px)">+</span></div>
+        <div class="ls-stat-label"><strong data-en>Years of Experience</strong><strong data-es>Años de Experiencia</strong><span data-en>Providing accessible legal protection across the USA</span><span data-es>Brindando protección legal accesible en todo EE.UU.</span></div>
+      </div>
+      <div class="ls-stat">
+        <div class="ls-stat-num">4.5M<span style="font-size:clamp(24px,3vw,40px)">+</span></div>
+        <div class="ls-stat-label"><strong data-en>Satisfied Members</strong><strong data-es>Miembros Satisfechos</strong><span data-en>Families and businesses protected nationwide</span><span data-es>Familias y negocios protegidos en todo el país</span></div>
+      </div>
+      <div class="ls-stat">
+        <div class="ls-stat-num">24/7</div>
+        <div class="ls-stat-label"><strong data-en>Attorney Access</strong><strong data-es>Acceso a Abogados</strong><span data-en>Qualified legal help whenever you need it most</span><span data-es>Ayuda legal calificada cuando más la necesitas</span></div>
+      </div>
+    </div>
+    <div class="ls-plans-header">
+      <p style="font-size:14px;color:rgba(255,255,255,.55);letter-spacing:.08em;text-transform:uppercase;font-weight:600" data-en>Choose Your Protection Level</p>
+      <p style="font-size:14px;color:rgba(255,255,255,.55);letter-spacing:.08em;text-transform:uppercase;font-weight:600" data-es>Elige Tu Nivel de Protección</p>
+    </div>
+    <div class="ls-plans fi">
+      <div class="ls-plan">
+        <div class="ls-plan-icon">👨‍👩‍👧‍👦</div>
+        <div class="ls-plan-name" data-en>For Families</div>
+        <div class="ls-plan-name" data-es>Para Familias</div>
+        <div class="ls-plan-tagline"><strong>$49.95</strong><span data-en>/month Unlimited — Husband, Wife &amp; Dependents under 26</span><span data-es>/mes Ilimitado — Esposo, Esposa y Dependientes menores de 26</span></div>
+        <div class="ls-plan-list">
+          <div class="ls-plan-item" data-en>Covers entire family — spouse &amp; all dependents under 26</div>
+          <div class="ls-plan-item" data-en>Unlimited attorney consultations</div>
+          <div class="ls-plan-item" data-en>Will &amp; estate document preparation</div>
+          <div class="ls-plan-item" data-en>Support for disputes, contracts &amp; emergencies</div>
+          <div class="ls-plan-item" data-en>Peace of mind — financial &amp; legal security</div>
+          <div class="ls-plan-item" data-es>Cubre toda la familia — cónyuge y dependientes &lt;26</div>
+          <div class="ls-plan-item" data-es>Consultas ilimitadas con abogados</div>
+          <div class="ls-plan-item" data-es>Preparación de testamentos y documentos</div>
+          <div class="ls-plan-item" data-es>Apoyo en disputas, contratos y emergencias</div>
+          <div class="ls-plan-item" data-es>Tranquilidad financiera y seguridad jurídica</div>
+        </div>
+        <button class="ls-plan-cta" onclick="scrollTo('contact')"><span data-en>Get Family Protection →</span><span data-es>Obtener Protección Familiar →</span></button>
+      </div>
+      <div class="ls-plan featured">
+        <div class="ls-plan-badge" data-en>Most Popular</div>
+        <div class="ls-plan-badge" data-es>Más Popular</div>
+        <div class="ls-plan-icon">🏢</div>
+        <div class="ls-plan-name" data-en>For Businesses</div>
+        <div class="ls-plan-name" data-es>Para Negocios</div>
+        <div class="ls-plan-tagline"><strong>$99</strong><span data-en>/month Unlimited — vs. $400/hour traditional attorney</span><span data-es>/mes Ilimitado — vs. $400/hora abogado tradicional</span></div>
+        <div class="ls-plan-list">
+          <div class="ls-plan-item" data-en>Contract reviews &amp; drafting</div>
+          <div class="ls-plan-item" data-en>Debt collection letters via attorney</div>
+          <div class="ls-plan-item" data-en>HR &amp; employment law consultations</div>
+          <div class="ls-plan-item" data-en>Asset &amp; business protection</div>
+          <div class="ls-plan-item" data-en>Phone consultations on any business matter</div>
+          <div class="ls-plan-item" data-es>Revisión y redacción de contratos</div>
+          <div class="ls-plan-item" data-es>Cartas de cobro de deudas por abogado</div>
+          <div class="ls-plan-item" data-es>Consultas de RR.HH. y derecho laboral</div>
+          <div class="ls-plan-item" data-es>Protección de activos y negocios</div>
+          <div class="ls-plan-item" data-es>Consultas telefónicas sobre cualquier asunto</div>
+        </div>
+        <button class="ls-plan-cta" onclick="scrollTo('contact')"><span data-en>Protect My Business →</span><span data-es>Proteger Mi Negocio →</span></button>
+      </div>
+      <div class="ls-plan">
+        <div class="ls-plan-icon">🌟</div>
+        <div class="ls-plan-name" data-en>For Everyone</div>
+        <div class="ls-plan-name" data-es>Para Todos</div>
+        <div class="ls-plan-tagline" data-en>Because legal protection shouldn't be a luxury</div>
+        <div class="ls-plan-tagline" data-es>Porque la protección legal no debería ser un lujo</div>
+        <div class="ls-plan-list">
+          <div class="ls-plan-item" data-en>Unlimited consultations with real attorneys</div>
+          <div class="ls-plan-item" data-en>Immediate assistance if detained or sued</div>
+          <div class="ls-plan-item" data-en>Prevention: guidance before you sign or act</div>
+          <div class="ls-plan-item" data-en>Emergency legal support — 24 hours a day</div>
+          <div class="ls-plan-item" data-es>Consultas ilimitadas con abogados reales</div>
+          <div class="ls-plan-item" data-es>Asistencia inmediata si te detienen o demandan</div>
+          <div class="ls-plan-item" data-es>Prevención: orientación antes de firmar o actuar</div>
+          <div class="ls-plan-item" data-es>Apoyo legal de emergencia — las 24 horas</div>
+        </div>
+        <button class="ls-plan-cta" onclick="scrollTo('contact')"><span data-en>Get My Plan →</span><span data-es>Obtener Mi Plan →</span></button>
+      </div>
+    </div>
+    <div class="ids-strip fi">
+      <div class="ids-icon">🔒</div>
+      <div style="flex:1">
+        <div class="ids-title" data-en>IDShield — Identity Theft Protection</div>
+        <div class="ids-title" data-es>IDShield — Protección Contra Robo de Identidad</div>
+        <p class="ids-desc">
+          <span data-en>"A Friday night, $10,000 was stolen from my account. IDShield's investigators restored my money before Monday morning — when the bank said it would take two weeks." — Richard Estrada, LegalShield Member. Don't wait until it's too late.</span>
+          <span data-es>"Un viernes en la noche me robaron $10,000 de mi cuenta. Los investigadores de IDShield me restauraron ese dinero antes del lunes — cuando el banco decía que tardaban dos semanas." — Richard Estrada, Miembro LegalShield. No esperes a que sea tarde.</span>
+        </p>
+      </div>
+      <button class="ids-cta" onclick="scrollTo('contact')"><span data-en>Get IDShield →</span><span data-es>Obtener IDShield →</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TESTIMONIALS
+     ══════════════════════════════════════════ -->
+<section class="sec test-sec" id="testimonials">
+  <div class="sinner">
+    <span class="stag" data-en>Real Stories. Real Results.</span>
+    <span class="stag" data-es>Historias Reales. Resultados Reales.</span>
+    <h2 class="sh2 fi"><span data-en>What Our Members <em>Say</em></span><span data-es>Lo que Dicen <em>Nuestros Miembros</em></span></h2>
+    <div class="test-grid fi">
+      <div class="test-hero">
+        <div class="test-hero-tag"><span>⚡</span><span data-en>Emergency Story</span><span data-es>Historia de Emergencia</span></div>
+        <p class="test-hero-quote">
+          <span data-en>"A Friday night, $10,000 was stolen from my account — money I needed for a closing on Monday morning. I called the emergency number and was connected to IDShield investigators. They restored my money before Monday, when the bank told me it would take two weeks. Thank God I have IDShield and the legal plan."</span>
+          <span data-es>"Un viernes en la noche me robaron $10,000 dólares de mi cuenta los cuales necesitaba para hacer un cierre el lunes por la mañana. Hablé al número de emergencia y me conectaron con los investigadores de IDShield. Ellos me restauraron ese dinero para poder hacer esa transacción el lunes, cuando el banco me decía que tardaban dos semanas. Gracias a Dios tengo IDShield y el plan legal."</span>
+        </p>
+        <div class="test-hero-by">— Richard Estrada, <span data-en>LegalShield Member</span><span data-es>Miembro de LegalShield</span></div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-q"><span data-en>"The reason I became a LegalShield member is that, like many people, I didn't have a will. The main reason was cost. Thanks to LegalShield, I had the opportunity to make my will and other important documents to protect my family."</span><span data-es>"La razón por la cual yo me hice miembro de LegalShield, es que yo al igual que mucha gente, no tenía un testamento. La razón principal es por el costo, y gracias a LegalShield tuve la oportunidad de hacer mi testamento y otros documentos importantes para la protección de mi familia."</span></p>
+        <div class="test-by">— Antonio, <span data-en>LegalShield Member</span><span data-es>Miembro de LegalShield</span></div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-q"><span data-en>"I had been avoiding making my will because it felt overwhelming. LegalShield and the provider attorney they connected me with made the process so easy and fast. I can't believe I waited so long when it was so quick!"</span><span data-es>"He estado evitando hacer mi testamento porque era abrumador. LegalShield y el abogado proveedor con el que me conectaron hicieron que el proceso fuera tan fácil y rápido. ¡No puedo creer que haya esperado tanto tiempo cuando fue tan rápido y fácil!"</span></p>
+        <div class="test-by">— Victoria, <span data-en>LegalShield Member</span><span data-es>Miembro de LegalShield</span></div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-q"><span data-en>"I was stopped driving 85 mph in a 55 zone and had just started working for the city — I needed my CDL license. I called my law firm, we went to court, and my attorney got the case dismissed. I was out of court in 19 minutes."</span><span data-es>"Me detuvieron conduciendo a 85 mph en una zona de 55 mph, y acababa de comenzar a trabajar para la ciudad. Necesitaba mi licencia CDL. Llamé a mi bufete de abogados, fuimos a la corte, y mi abogado logró que se desestimara el caso. Salí de la corte en 19 minutos."</span></p>
+        <div class="test-by">— Joe Morgan, <span data-en>LegalShield Member</span><span data-es>Miembro de LegalShield</span></div>
+      </div>
+      <div class="test-card" style="grid-column:1/-1;background:rgba(200,150,10,.05);border-color:rgba(200,150,10,.2)">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-q" style="font-size:15.5px;color:var(--txt)"><span data-en>"A friend called me desperate. Authorities arrived at his workplace and took all his colleagues into custody — they had no legal guidance. In days they spent thousands of dollars on attorneys and hearings. With our subscription, one simple call would have had an attorney intervene immediately. Now they ask me: 'How do we subscribe?' — but unfortunately it was already too late."</span><span data-es>"Hace poco, un amigo me llamó desesperado. Las autoridades llegaron de repente a su trabajo y se llevaron detenidos a todos sus colegas. En cuestión de días, tuvieron que gastar miles de dólares en abogados, trámites y audiencias. Si hubieran tenido nuestra suscripción, con una simple llamada uno de nuestros abogados habría intervenido de inmediato. Ahora me dicen: '¿Cómo hacemos para suscribirnos?' Pero lamentablemente, ya fue tarde."</span></p>
+        <div class="test-by">— Fazur Alberto Estrada Jr., <span data-en>LegalShield Associate Manager &amp; Founder, Alianza One LLC</span><span data-es>Gerente Asociado LegalShield y Fundador, Alianza One LLC</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     BILINGUAL SECTION
+     ══════════════════════════════════════════ -->
+<section class="bi-sec">
+  <div class="bi-inner">
+    <div class="bi-tag"><span>🌎</span><span data-en>Hispanic Community</span><span data-es>Comunidad Hispana</span></div>
+    <h2 class="bi-h2 fi"><span data-en>Tu Éxito Es <em>Nuestra Misión</em></span><span data-es>Tu Éxito Es <em>Nuestra Misión</em></span></h2>
+    <p class="bi-sub fi">
+      <span data-en>We proudly serve Utah's growing Hispanic community in Spanish — no language barrier, no confusion. From immigration forms to business formation to Profit First advisory, Alianza One is your bilingual professional partner.</span>
+      <span data-es>Servimos con orgullo a la creciente comunidad hispana de Utah en español — sin barreras de idioma. Desde formularios de inmigración hasta formación de empresas y asesoría Profit First, Alianza One es tu socio de servicios profesionales bilingüe.</span>
+    </p>
+    <div class="bi-btns fi">
+      <a href="https://wa.me/14706427978?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" class="btn-wa">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span data-en>Hablamos Español — WhatsApp</span>
+        <span data-es>Hablamos Español — WhatsApp</span>
+      </a>
+      <a href="https://www.legalparatodosusa.com" target="_blank" class="btn-o"><span data-en>Visit legalparatodosusa.com</span><span data-es>Visitar legalparatodosusa.com</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ABOUT — Fazur + Alianza One brand
+     ══════════════════════════════════════════ -->
+<section class="sec about-sec" id="about">
+  <div class="sinner">
+    <div class="about-grid">
+      <div class="about-vis fi">
+        <!-- Alianza One branding in about card -->
+        <div class="about-logo">
+          <svg class="about-logo-umb" style="width:72px;height:48px" viewBox="0 0 240 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dome fill -->
+  <path d="M 30,95 A 90,90 0 0,1 210,95 Z" fill="#C8960A" opacity="0.12"/>
+  <!-- Dome outline -->
+  <path d="M 30,95 A 90,90 0 0,1 210,95 Z" fill="none" stroke="#C8960A" stroke-width="2"/>
+  <!-- Negative space arches (navy cutouts) — dark fill matches background -->
+  <path d="M 100,95 A 20,26 0 0,1 140,95 Z" fill="#0D1F3C"/>
+  <path d="M 57,95 A 13,17 0 0,1 83,95 Z" fill="#0D1F3C"/>
+  <path d="M 157,95 A 13,17 0 0,1 183,95 Z" fill="#0D1F3C"/>
+  <!-- Inner diagonal lines -->
+  <line x1="120" y1="8" x2="30" y2="95" stroke="#C8960A" stroke-width="2.8" opacity="0.8"/>
+  <line x1="120" y1="8" x2="210" y2="95" stroke="#C8960A" stroke-width="1.4" opacity="0.4"/>
+  <!-- Gold brim bar -->
+  <rect x="30" y="91" width="180" height="9" fill="#C8960A" rx="1"/>
+  <!-- Gold handle -->
+  <path d="M 120,100 L 120,126 Q 120,140 107,140 Q 95,140 95,130" fill="none" stroke="#C8960A" stroke-width="5.5" stroke-linecap="round"/>
+  <!-- Apex dot -->
+  <circle cx="120" cy="8" r="5" fill="#C8960A"/>
+</svg>
+          <div class="about-logo-text">
+            <span class="al">Alianza</span>
+            <span class="one">One LLC</span>
+          </div>
+        </div>
+        <div style="font-family:var(--serif);font-size:24px;font-weight:700;color:#fff;margin-bottom:4px">Fazur <span style="color:var(--gold)">Alberto</span><br>Estrada Jr.</div>
+        <div class="about-role" data-en>Founder &amp; Managing Member · LegalShield Associate Manager</div>
+        <div class="about-role" data-es>Fundador y Socio Gerente · Gerente Asociado LegalShield</div>
+        <div class="about-div"></div>
+        <p class="about-quote">
+          <span data-en>"One trusted partner for legal, immigration, financial &amp; business needs."</span>
+          <span data-es>"Su socio de confianza para asuntos legales, inmigración, finanzas y negocios."</span>
+        </p>
+        <div class="about-contacts">
+          <div class="about-ci"><span>📞</span><span><a href="tel:4706427978" style="color:rgba(255,255,255,.65)">470-642-7978</a></span></div>
+          <div class="about-ci"><span>✉</span><span>fazur@alianzaone.com</span></div>
+          <div class="about-ci"><span>📍</span><span>50 W Broadway, Suite 300, Salt Lake City, UT 84101</span></div>
+          <div class="about-ci"><span>🌐</span><span>www.alianzaone.com</span></div>
+        </div>
+      </div>
+      <div class="about-text fi">
+        <span class="stag" data-en>About Alianza One</span>
+        <span class="stag" data-es>Sobre Alianza One</span>
+        <h3><span data-en>One Umbrella. Nine Services.<br>One Goal: Your Success.</span><span data-es>Un Paraguas. Nueve Servicios.<br>Un Objetivo: Tu Éxito.</span></h3>
+        <p><span data-en>Alianza One LLC was founded to solve a real problem: too many individuals and small businesses — especially in Utah's Hispanic community — were paying too much for services they couldn't afford, or going without altogether. Our name says it: one alliance, standing with you.</span><span data-es>Alianza One LLC fue fundada para resolver un problema real: demasiadas personas y pequeñas empresas — especialmente en la comunidad hispana de Utah — pagaban demasiado o prescindían de servicios esenciales. Nuestro nombre lo dice: una alianza, contigo.</span></p>
+        <p><span data-en>We bring together nine professional service lines — legal protection, immigration assistance, business formation, tax preparation, notary, mediation, bookkeeping, Profit First advisory, and court interpretation — all bilingual, all professional, and all affordable.</span><span data-es>Reunimos nueve líneas de servicio profesional — protección legal, asistencia migratoria, formación de empresas, impuestos, notario, mediación, contabilidad, asesoría Profit First e interpretación judicial — todo bilingüe, todo profesional y todo asequible.</span></p>
+        <div class="creds">
+          <div class="cred"><div class="cred-ic">🏛️</div><div class="cred-t"><strong data-en>Utah Registered LLC — Alianza One LLC</strong><strong data-es>LLC Registrada en Utah — Alianza One LLC</strong><span data-en>Entity #14679225-0160 · Effective May 7, 2026</span><span data-es>Entidad #14679225-0160 · Efectivo 7 de mayo de 2026</span></div></div>
+          <div class="cred"><div class="cred-ic">🛡️</div><div class="cred-t"><strong data-en>LegalShield Associate Manager</strong><strong data-es>Gerente Asociado LegalShield</strong><span data-en>Small Business &amp; Employee Benefits Specialist</span><span data-es>Especialista en Pequeñas Empresas y Beneficios</span></div></div>
+          <div class="cred"><div class="cred-ic">🌎</div><div class="cred-t"><strong data-en>Bilingual Services — EN / ES</strong><strong data-es>Servicios Bilingüe — EN / ES</strong><span data-en>Proudly serving Utah's Hispanic community</span><span data-es>Sirviendo con orgullo a la comunidad hispana</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FAQ — 6 questions
+     ══════════════════════════════════════════ -->
+<section class="sec faq-sec" id="faq">
+  <div class="sinner">
+    <div style="text-align:center;max-width:700px;margin:0 auto">
+      <span class="stag" data-en>Common Questions</span>
+      <span class="stag" data-es>Preguntas Frecuentes</span>
+      <h2 class="sh2 fi"><span data-en>Everything You Need to <em>Know</em></span><span data-es>Todo lo que Necesitas <em>Saber</em></span></h2>
+    </div>
+    <div class="faq-grid fi">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text" data-en>Is Alianza One LLC a law firm? Can you give me legal advice?</span>
+          <span class="faq-q-text" data-es>¿Alianza One LLC es un bufete de abogados? ¿Pueden darme asesoría legal?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">
+          <p data-en>No. Alianza One LLC is not a law firm and does not provide legal advice or legal representation. We provide professional administrative and document support services. For legal advice, we connect you to a licensed attorney — including through LegalShield membership plans that give you direct access to a law firm.</p>
+          <p data-es>No. Alianza One LLC no es un bufete de abogados y no proporciona asesoramiento legal ni representación. Proporcionamos servicios profesionales de apoyo administrativo y documentos. Para asesoría legal, te conectamos con un abogado con licencia — incluso a través de los planes LegalShield.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text" data-en>What can an immigration consultant do — and what can they NOT do?</span>
+          <span class="faq-q-text" data-es>¿Qué puede hacer un consultor de inmigración — y qué NO puede hacer?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">
+          <p data-en>A registered Utah immigration consultant CAN: help complete USCIS forms based on information you provide, translate your answers on government documents, help gather supporting documents, and submit completed forms on your behalf. They CANNOT provide legal advice on immigration strategy, represent you before USCIS or immigration courts, or advise you on what answers to give. For those needs, we refer you to a licensed immigration attorney.</p>
+          <p data-es>Un consultor registrado en Utah PUEDE: ayudar a completar formularios de USCIS, traducir respuestas en documentos gubernamentales, ayudar a reunir documentos de apoyo y presentar formularios en tu nombre. NO PUEDE: dar asesoría legal de estrategia migratoria, representarte ante USCIS o cortes de inmigración. Para eso, te referimos a un abogado de inmigración con licencia.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text" data-en>How much does LegalShield cost? What plans are available?</span>
+          <span class="faq-q-text" data-es>¿Cuánto cuesta LegalShield? ¿Qué planes hay disponibles?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">
+          <p data-en><strong>Premium Family Plan — $49.95/month Unlimited:</strong> Covers you, your spouse, and all dependents under age 26. Includes unlimited attorney consultations, will &amp; estate preparation, emergency 24/7 legal support, and contract reviews. One flat monthly fee protects your entire family.</p>
+          <p data-en><strong>Small Business Legal Plus Plan — $99/month Unlimited:</strong> Includes unlimited attorney phone consultations, contract reviews and drafting, debt collection letters via attorney, HR and employment law guidance, and business asset protection — vs $300–$600/hour for a traditional attorney.</p>
+          <p data-en>Contact us to find the right plan. I enroll you and support you as your LegalShield Associate Manager.</p>
+          <p data-es><strong>Plan Familiar Premium — $49.95/mes Ilimitado:</strong> Cubre a ti, tu cónyuge y todos los dependientes menores de 26 años. Incluye consultas ilimitadas con abogados, preparación de testamentos, apoyo legal de emergencia 24/7 y revisión de contratos.</p>
+          <p data-es><strong>Plan Legal Plus para Pequeñas Empresas — $99/mes Ilimitado:</strong> Incluye consultas ilimitadas con abogados, revisión y redacción de contratos, cartas de cobro de deudas, orientación laboral y protección de activos — vs $300–$600/hora abogado tradicional.</p>
+          <p data-es>Contáctanos para encontrar el plan adecuado. Te inscribo y apoyo como tu Gerente Asociado LegalShield.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text" data-en>Do you offer services in Spanish?</span>
+          <span class="faq-q-text" data-es>¿Ofrecen servicios en español?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">
+          <p data-en>Yes — fully. All nine Alianza One services are available in both English and Spanish. We are proud to serve Utah's Hispanic community with bilingual intake, bilingual documentation, and Spanish-language communications throughout your engagement.</p>
+          <p data-es>Sí — completamente. Los nueve servicios de Alianza One están disponibles en inglés y español. Con orgullo servimos a la comunidad hispana de Utah con atención bilingüe, documentos bilingüe y comunicaciones en español durante todo tu proceso.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text" data-en>How quickly can you form my LLC in Utah?</span>
+          <span class="faq-q-text" data-es>¿Qué tan rápido pueden formar mi LLC en Utah?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">
+          <p data-en>Standard processing through the Utah Division of Corporations typically takes 3–7 business days. Expedited processing (for an additional fee paid to the state) can be completed in 1–2 business days. We prepare all your documents and submit everything — you just review and approve.</p>
+          <p data-es>El procesamiento estándar a través de la División de Corporaciones de Utah tarda típicamente 3–7 días hábiles. El procesamiento expedito (con una tarifa adicional al estado) puede completarse en 1–2 días hábiles. Nosotros preparamos todos tus documentos y presentamos todo.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text" data-en>What is Profit First Advisory and do I need it?</span>
+          <span class="faq-q-text" data-es>¿Qué es la Asesoría Profit First y la necesito?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">
+          <p data-en>Profit First is a cash-flow management method that flips traditional accounting: instead of Revenue – Expenses = Profit, you allocate Profit first, then operate on what remains. We set up dedicated bank accounts for profit, taxes, owner pay, and operating expenses — so your business is always profitable and tax-ready. If you've ever reached tax season with no money set aside, this system is for you.</p>
+          <p data-es>Profit First es un método de gestión del flujo de caja que invierte la contabilidad tradicional: en lugar de Ingresos – Gastos = Ganancia, primero asignas la Ganancia y luego operas con lo que queda. Configuramos cuentas bancarias dedicadas para ganancias, impuestos, pago del dueño y gastos operativos. Si alguna vez has llegado a la temporada de impuestos sin dinero reservado, este sistema es para ti.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+     ══════════════════════════════════════════ -->
+<section class="sec ct-sec" id="contact">
+  <div class="sinner">
+    <div class="ct-grid">
+      <div class="ct-info">
+        <span class="stag" data-en>Get In Touch</span>
+        <span class="stag" data-es>Contáctanos</span>
+        <h2 class="sh2 fi"><span data-en>Your Free Consultation<br>Starts <em>Right Here</em></span><span data-es>Tu Consulta Gratis<br>Comienza <em>Aquí Mismo</em></span></h2>
+        <p class="ssub fi" style="margin-bottom:0"><span data-en>Tell us what you need. We'll respond within one business day with a clear plan and flat-rate quote — no obligation, no attorney fees.</span><span data-es>Cuéntanos qué necesitas. Te responderemos en un día hábil con un plan claro y tarifa fija — sin compromiso.</span></p>
+        <div class="ct-items fi">
+          <div class="ct-item">
+            <div class="ct-icon">📞</div>
+            <div class="ct-det"><strong data-en>Phone</strong><strong data-es>Teléfono</strong><span><a href="tel:4706427978" style="color:var(--gold);font-weight:600">470-642-7978</a></span></div>
+          </div>
+          <div class="ct-item">
+            <div class="ct-icon" style="background:var(--green)">💬</div>
+            <div class="ct-det"><strong data-en>WhatsApp</strong><strong data-es>WhatsApp</strong><span><a href="https://wa.me/14706427978?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" style="color:var(--green);font-weight:600" data-en>Message us now — instant response</a><a href="https://wa.me/14706427978?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" style="color:var(--green);font-weight:600" data-es>Escríbenos ahora — respuesta inmediata</a></span></div>
+          </div>
+          <div class="ct-item">
+            <div class="ct-icon">✉️</div>
+            <div class="ct-det"><strong data-en>Email</strong><strong data-es>Correo</strong><span>fazur@alianzaone.com</span></div>
+          </div>
+          <div class="ct-item">
+            <div class="ct-icon">📍</div>
+            <div class="ct-det"><strong data-en>Office</strong><strong data-es>Oficina</strong><span>50 W Broadway, Suite 300<br>Salt Lake City, UT 84101</span></div>
+          </div>
+          <div class="ct-item">
+            <div class="ct-icon">🕐</div>
+            <div class="ct-det"><strong data-en>Hours</strong><strong data-es>Horario</strong><span data-en>Monday – Friday: 9am – 6pm</span><span data-es>Lunes – Viernes: 9am – 6pm</span></div>
+          </div>
+        </div>
+        <div class="urgency">
+          <div class="urgency-dot"></div>
+          <p class="urgency-text">
+            <strong data-en>Limited consultation availability.</strong>
+            <strong data-es>Disponibilidad limitada de consultas.</strong>
+            <span data-en> We accept a limited number of new clients each week to ensure personalized attention. Don't wait — legal and immigration situations rarely improve on their own.</span>
+            <span data-es> Aceptamos un número limitado de nuevos clientes cada semana para garantizar atención personalizada. No esperes — las situaciones legales y de inmigración rara vez mejoran solas.</span>
+          </p>
+        </div>
+      </div>
+      <div class="ct-form fi">
+        <div class="wa-contact">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <div class="wa-contact-text">
+            <h4 data-en>Chat on WhatsApp — Instant</h4>
+            <h4 data-es>Chat por WhatsApp — Instantáneo</h4>
+            <p data-en>Message us in English or Spanish. We respond within minutes.</p>
+            <p data-es>Escríbenos en inglés o español. Respondemos en minutos.</p>
+          </div>
+          <a href="https://wa.me/14706427978?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" class="wa-contact-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#075E54"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span data-en>Open WhatsApp</span>
+            <span data-es>Abrir WhatsApp</span>
+          </a>
+        </div>
+        <h3 class="ft" data-en>Request Free Consultation</h3>
+        <h3 class="ft" data-es>Solicitar Consulta Gratis</h3>
+        <p class="fsub" data-en>We respond within 1 business day.</p>
+        <p class="fsub" data-es>Respondemos en 1 día hábil.</p>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="frow">
+            <div class="fg"><label class="fl" data-en>First Name *</label><label class="fl" data-es>Nombre *</label><input class="fi-el" type="text" required placeholder="John"></div>
+            <div class="fg"><label class="fl" data-en>Last Name *</label><label class="fl" data-es>Apellido *</label><input class="fi-el" type="text" required placeholder="Doe"></div>
+          </div>
+          <div class="fg"><label class="fl" data-en>Email *</label><label class="fl" data-es>Correo *</label><input class="fi-el" type="email" required placeholder="john@email.com"></div>
+          <div class="fg"><label class="fl" data-en>Phone</label><label class="fl" data-es>Teléfono</label><input class="fi-el" type="tel" placeholder="(801) 555-0000"></div>
+          <div class="fg">
+            <label class="fl" data-en>Service Needed *</label><label class="fl" data-es>Servicio *</label>
+            <select class="fs-el" required>
+              <option value="" data-en>Select a service...</option>
+              <option value="" data-es>Selecciona un servicio...</option>
+              <option value="legalshield" data-en>01 · LegalShield Protection</option>
+              <option value="legalshield" data-es>01 · Protección LegalShield</option>
+              <option value="business" data-en>02 · Business Formation (LLC)</option>
+              <option value="business" data-es>02 · Formación de Empresa (LLC)</option>
+              <option value="immigration" data-en>03 · Immigration Form Assistance</option>
+              <option value="immigration" data-es>03 · Formularios de Inmigración</option>
+              <option value="tax" data-en>04 · Tax Preparation &amp; Filing</option>
+              <option value="tax" data-es>04 · Preparación de Impuestos</option>
+              <option value="notary" data-en>05 · Notary Services</option>
+              <option value="notary" data-es>05 · Servicios de Notario</option>
+              <option value="mediation" data-en>06 · Mediation</option>
+              <option value="mediation" data-es>06 · Mediación</option>
+              <option value="bookkeeping" data-en>07 · Bookkeeping &amp; Accounting</option>
+              <option value="bookkeeping" data-es>07 · Contabilidad y Finanzas</option>
+              <option value="profitfirst" data-en>08 · Profit First Advisory</option>
+              <option value="profitfirst" data-es>08 · Asesoría Profit First</option>
+              <option value="interpretation" data-en>09 · Court Interpretation</option>
+              <option value="interpretation" data-es>09 · Interpretación Judicial</option>
+              <option value="other" data-en>Other / Not Sure</option>
+              <option value="other" data-es>Otro / No Estoy Seguro</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label class="fl" data-en>Tell Us Your Situation</label><label class="fl" data-es>Cuéntanos Tu Situación</label>
+            <textarea class="fta" id="msgarea" placeholder="Briefly describe what you need help with..."></textarea>
+          </div>
+          <div class="fg">
+            <label class="fl" data-en>Preferred Language</label><label class="fl" data-es>Idioma Preferido</label>
+            <select class="fs-el">
+              <option data-en>English</option><option data-es>Inglés</option>
+              <option data-en>Spanish / Español</option><option data-es>Español / Spanish</option>
+            </select>
+          </div>
+          <button type="submit" class="fsub-btn"><span data-en>Get My Free Consultation →</span><span data-es>Obtener Mi Consulta Gratis →</span></button>
+          <p class="fnote" data-en>🔒 Your information is private and never shared. No spam, ever.</p>
+          <p class="fnote" data-es>🔒 Tu información es privada y nunca se comparte. Sin spam, jamás.</p>
+        </form>
+        <div id="formSuccess" style="display:none;text-align:center;padding:40px 20px">
+          <div style="font-size:48px;margin-bottom:14px">✅</div>
+          <h4 style="font-family:var(--serif);font-size:22px;color:#fff;margin-bottom:8px" data-en>Message Received!</h4>
+          <h4 style="font-family:var(--serif);font-size:22px;color:#fff;margin-bottom:8px" data-es>¡Mensaje Recibido!</h4>
+          <p style="font-size:14px;color:rgba(255,255,255,.6)" data-en>We'll be in touch within one business day. Thank you!</p>
+          <p style="font-size:14px;color:rgba(255,255,255,.6)" data-es>Nos pondremos en contacto en un día hábil. ¡Gracias!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+     ══════════════════════════════════════════ -->
+<footer class="ftr">
+  <div class="ftr-inner">
+    <div class="ftr-top">
+      <div>
+        <div class="ftr-logo">
+          <svg class="ftr-logo-umb" style="width:56px;height:38px" viewBox="0 0 240 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dome fill -->
+  <path d="M 30,95 A 90,90 0 0,1 210,95 Z" fill="#C8960A" opacity="0.12"/>
+  <!-- Dome outline -->
+  <path d="M 30,95 A 90,90 0 0,1 210,95 Z" fill="none" stroke="#C8960A" stroke-width="2"/>
+  <!-- Negative space arches (navy cutouts) — dark fill matches background -->
+  <path d="M 100,95 A 20,26 0 0,1 140,95 Z" fill="#0D1F3C"/>
+  <path d="M 57,95 A 13,17 0 0,1 83,95 Z" fill="#0D1F3C"/>
+  <path d="M 157,95 A 13,17 0 0,1 183,95 Z" fill="#0D1F3C"/>
+  <!-- Inner diagonal lines -->
+  <line x1="120" y1="8" x2="30" y2="95" stroke="#C8960A" stroke-width="2.8" opacity="0.8"/>
+  <line x1="120" y1="8" x2="210" y2="95" stroke="#C8960A" stroke-width="1.4" opacity="0.4"/>
+  <!-- Gold brim bar -->
+  <rect x="30" y="91" width="180" height="9" fill="#C8960A" rx="1"/>
+  <!-- Gold handle -->
+  <path d="M 120,100 L 120,126 Q 120,140 107,140 Q 95,140 95,130" fill="none" stroke="#C8960A" stroke-width="5.5" stroke-linecap="round"/>
+  <!-- Apex dot -->
+  <circle cx="120" cy="8" r="5" fill="#C8960A"/>
+</svg>
+          <div class="ftr-logo-text">
+            <span class="al">Alianza</span>
+            <span class="one">One LLC</span>
+          </div>
+        </div>
+        <p class="ftr-tline" data-en>Your trusted bilingual professional services partner in Salt Lake City, Utah. Nine services. One alliance.</p>
+        <p class="ftr-tline" data-es>Tu socio de servicios profesionales bilingüe en Salt Lake City, Utah. Nueve servicios. Una alianza.</p>
+        <div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:14px">
+          <a href="https://fazuralbertojr.legalshieldassociate.com" target="_blank" style="display:inline-block;background:rgba(200,150,10,.1);border:1px solid rgba(200,150,10,.22);border-radius:6px;padding:6px 12px;font-size:11px;font-weight:600;color:var(--gold);letter-spacing:.05em">LegalShield Portal</a>
+          <a href="https://www.legalparatodosusa.com" target="_blank" style="display:inline-block;background:rgba(200,150,10,.1);border:1px solid rgba(200,150,10,.22);border-radius:6px;padding:6px 12px;font-size:11px;font-weight:600;color:var(--gold);letter-spacing:.05em">legalparatodosusa.com</a>
+        </div>
+      </div>
+      <div>
+        <div class="fcol-h" data-en>Services</div>
+        <div class="fcol-h" data-es>Servicios</div>
+        <div class="flinks">
+          <a href="#services" data-en>LegalShield Protection</a><a href="#services" data-es>Protección LegalShield</a>
+          <a href="#services" data-en>Business Formation</a><a href="#services" data-es>Formación de Empresas</a>
+          <a href="#services" data-en>Immigration Forms</a><a href="#services" data-es>Formularios Migración</a>
+          <a href="#services" data-en>Tax Preparation</a><a href="#services" data-es>Preparación de Impuestos</a>
+          <a href="#services" data-en>Notary &amp; Mediation</a><a href="#services" data-es>Notario y Mediación</a>
+          <a href="#services" data-en>Bookkeeping &amp; Profit First</a><a href="#services" data-es>Contabilidad &amp; Profit First</a>
+          <a href="#services" data-en>Court Interpretation</a><a href="#services" data-es>Interpretación Judicial</a>
+        </div>
+      </div>
+      <div>
+        <div class="fcol-h" data-en>Quick Links</div>
+        <div class="fcol-h" data-es>Accesos Rápidos</div>
+        <div class="flinks">
+          <a href="#legalshield" data-en>LegalShield Plans</a><a href="#legalshield" data-es>Planes LegalShield</a>
+          <a href="#testimonials" data-en>Testimonials</a><a href="#testimonials" data-es>Testimonios</a>
+          <a href="#about" data-en>About Us</a><a href="#about" data-es>Sobre Nosotros</a>
+          <a href="#faq" data-en>FAQ</a><a href="#faq" data-es>Preguntas</a>
+          <a href="#contact" data-en>Contact</a><a href="#contact" data-es>Contacto</a>
+        </div>
+      </div>
+      <div>
+        <div class="fcol-h" data-en>Contact</div>
+        <div class="fcol-h" data-es>Contacto</div>
+        <div class="flinks">
+          <a href="tel:4706427978">📞 470-642-7978</a>
+          <a href="https://wa.me/14706427978?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank">💬 WhatsApp</a>
+          <span style="color:rgba(255,255,255,.5);font-size:13px">fazur@alianzaone.com</span>
+          <a href="#contact">50 W Broadway, Suite 300</a>
+          <a href="#contact">Salt Lake City, UT 84101</a>
+        </div>
+      </div>
+    </div>
+    <div class="ftr-bot">
+      <span class="fcopy" data-en>© 2026 Alianza One LLC. All rights reserved. Formerly Legal4AllNow LLC.</span>
+      <span class="fcopy" data-es>© 2026 Alianza One LLC. Todos los derechos reservados. Antes Legal4AllNow LLC.</span>
+    </div>
+    <p class="fdisclaimer" data-en>Alianza One LLC is not a law firm and does not provide legal advice or legal representation. All services are non-legal professional and administrative services only. Immigration form assistance is provided solely by individually registered consultants under Utah Code Ann. § 13-49-201. LegalShield plans are marketed as an independent associate and are not affiliated with Alianza One LLC's own service offerings. Always consult a licensed attorney for legal matters.</p>
+    <p class="fdisclaimer" data-es>Alianza One LLC no es un bufete de abogados y no proporciona asesoramiento legal ni representación legal. Todos los servicios son servicios profesionales y administrativos no legales. La asistencia con formularios de inmigración la proporcionan exclusivamente consultores registrados individualmente bajo el Código de Utah § 13-49-201. Los planes de LegalShield se comercializan como asociado independiente.</p>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     MOBILE STICKY BAR
+     ══════════════════════════════════════════ -->
+<div class="mob-bar" id="mobBar">
+  <a href="tel:4706427978" class="mob-call" data-en>📞 Call</a>
+  <a href="tel:4706427978" class="mob-call" data-es>📞 Llamar</a>
+  <a href="https://wa.me/14706427978?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" class="mob-wa">💬 WhatsApp</a>
+  <a href="#contact" class="mob-book" data-en>📅 Book</a>
+  <a href="#contact" class="mob-book" data-es>📅 Cita</a>
+</div>
+
+<!-- ══════════════════════════════════════════
+     FLOATING WHATSAPP BUBBLE
+     ══════════════════════════════════════════ -->
+<a href="https://wa.me/14706427978?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios"
+   target="_blank" id="waFloat"
+   style="position:fixed;bottom:80px;right:20px;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:190;box-shadow:0 4px 20px rgba(37,211,102,.4);text-decoration:none;opacity:0;transition:opacity .4s"
+   title="WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<style>@keyframes wapulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.4)}70%{box-shadow:0 0 0 12px rgba(37,211,102,0)}}#waFloat{animation:wapulse 2.5s infinite}</style>
+
+<!-- ══════════════════════════════════════════
+     DEV NOTES — collapsed
+     ══════════════════════════════════════════ -->
+<div class="dev-notes" id="devNotes">
+  <button class="dev-toggle" onclick="document.getElementById('devNotes').classList.toggle('open')">🎓 Developer &amp; Brand Notes — Alianza One LLC Rebrand · click to expand</button>
+  <div class="dev-content">
+    <h4>Rebrand Summary — Legal4AllNow LLC → Alianza One LLC</h4>
+    Entity Number: 14679225-0160 · Effective: May 7, 2026. Reasons: LegalShield policy compliance (no "legal" in entity name), cleaner digital infrastructure (no numerals), stronger corporate image. Brand Standards V3.0 applied throughout.
+    <h4>Brand Color System (from Brand Standards Slide 6)</h4>
+    Navy #0D1F3C (60-70%) · Gold #C8960A (20-30%) · White #FFFFFF (10-20%). "Navy is authority. Gold is energy. White is breath." Mid Gray #D8DCE3 for dividers. Light Surface #F4F5F7 for cards.
+    <h4>Typography System (Brand Standards Slide 7)</h4>
+    Wordmark: Georgia Bold · All caps · Letter-spacing +5. Gold accent (ONE): Georgia Black · Letter-spacing +8. Section headlines: Georgia Bold · Title case. Body: Arial Regular (mapped to DM Sans here for screen rendering quality). Captions: 8-9pt italic.
+    <h4>Umbrella Symbol Meaning (Brand Standards Slide 4)</h4>
+    Gold Apex Dot = ONE · Navy Dome = comprehensive coverage (9 services) · White Arches = the people protected (families, workers, entrepreneurs) · Gold Brim Bar = authority and promise · Gold Handle = approachability.
+    <h4>Nine Services — Official Numbering (Brand Standards Slide 8)</h4>
+    01 LegalShield · 02 Business Formation · 03 Immigration Forms · 04 Tax Preparation · 05 Notary · 06 Mediation · 07 Bookkeeping · 08 Profit First Advisory · 09 Court Interpretation.
+    <h4>GitHub Upload Reminder</h4>
+    Download → rename to index.html → github.com/fazurestrada/Legal4allnow → delete old index.html → upload new → commit → wait 2 min. Domain: www.alianzaone.com should replace www.legal4allnow.com once alianzaone.com domain is registered and pointed per rebrand checklist.
+    <h4>Next Steps from Brand Standards Rebrand Checklist</h4>
+    ☐ Register alianzaone.com domain · ☐ 301 redirect: legal4allnow.com → alianzaone.com · ☐ Update Square POS · ☐ Update Gmail to fazur@alianzaone.com · ☐ Update Relay Banking · ☐ Update LegalShield associate profile · ☐ Reprint business cards · ☐ Update Northwest Registered Agent · ☐ Update letterhead
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     JAVASCRIPT
+     ══════════════════════════════════════════ -->
+<script>
+function setLang(l){
+  document.body.className='lang-'+l;
+  document.documentElement.lang=l;
+  document.querySelectorAll('.lbtn').forEach(function(b){b.classList.remove('active')});
+  var u=document.getElementById('btn-'+l);
+  var n=document.getElementById('nav-btn-'+l);
+  if(u)u.classList.add('active');
+  if(n)n.classList.add('active');
+  var ta=document.getElementById('msgarea');
+  if(ta)ta.placeholder=l==='es'?'Describe brevemente en qué necesitas ayuda...':'Briefly describe what you need help with...';
+  try{localStorage.setItem('a1-lang',l)}catch(e){}
+}
+try{var s=localStorage.getItem('a1-lang');if(s&&(s==='en'||s==='es'))setLang(s)}catch(e){}
+
+function toggleMenu(){
+  var d=document.getElementById('navDrawer');
+  d.style.display=d.style.display==='flex'?'none':'flex';
+}
+function closeDrawer(){document.getElementById('navDrawer').style.display='none'}
+
+function scrollTo(id){
+  var el=document.getElementById(id);
+  if(el)el.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function toggleFaq(btn){
+  var item=btn.parentElement;
+  var wasOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(i){i.classList.remove('open')});
+  if(!wasOpen)item.classList.add('open');
+}
+
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('vis')});
+},{threshold:0.10});
+document.querySelectorAll('.fi').forEach(function(el){obs.observe(el)});
+
+function handleSubmit(e){
+  e.preventDefault();
+  document.getElementById('contactForm').style.display='none';
+  document.getElementById('formSuccess').style.display='block';
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var target=document.querySelector(a.getAttribute('href'));
+    if(target){e.preventDefault();closeDrawer();setTimeout(function(){target.scrollIntoView({behavior:'smooth',block:'start'})},100)}
+  });
+});
+
+window.addEventListener('scroll',function(){
+  var wf=document.getElementById('waFloat');
+  if(wf)wf.style.opacity=window.scrollY>400?'1':'0';
+},{passive:true});
+
+document.addEventListener('click',function(e){
+  var d=document.getElementById('navDrawer');
+  var h=document.getElementById('hbg');
+  if(d&&d.style.display==='flex'&&!d.contains(e.target)&&!h.contains(e.target))d.style.display='none';
+});
+</script>
+</body>
+</html>
